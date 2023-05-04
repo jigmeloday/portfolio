@@ -4,6 +4,7 @@
     "no-console": "error",
     "no-debugger": "error",
     "semi": "error",
+    "no-unused-vars": "error",
     "quotes": [
       "error",
       "single",

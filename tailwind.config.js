@@ -8,14 +8,14 @@ module.exports = {
   theme: {
     extend: {
       primary: {
-        main: '',
-        light: '',
-        dark: ''
+        main: '#fae20a',
+        light: '#fcee6c',
+        dark: '#e1cb09'
       },
       background: {
-        main: '',
-        light: '',
-        dark: ''
+        main: '#1a1a1a',
+        light: '#333333',
+        dark: '#000000'
       }
     },
   },
