@@ -1,8 +1,10 @@
 import { ReactNode } from 'react';
+import { Provider } from 'react-redux';
+import { store } from '@/store/store';
 
 function Layout(props: { children: ReactNode }) {
     return(
-      <div>{props.children}</div>
+      <Provider store={store}>{props.children}</Provider>
     );
 }
 
