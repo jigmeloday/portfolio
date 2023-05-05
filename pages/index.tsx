@@ -9,7 +9,7 @@ export default function Home() {
     <main>
       <div className='min-h-screen bg-primary-main text-main'>
           <h1 className='font-9'>{ test }</h1>
-          <button onClick={() => dispatch(increment(3))} >press me</button>
+          <button onClick={() => dispatch(increment())} >press me</button>
       </div>
     </main>
   );
