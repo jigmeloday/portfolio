@@ -6,7 +6,7 @@ function SideNav() {
     const dispatch = useDispatch();
 
     return(
-        <div className='bg-yellow-300'>
+        <div className='bg-primary-dark'>
            hello
             <button onClick={() => dispatch(setNavState(!isOpen)) }> hello </button>
         </div>
