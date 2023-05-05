@@ -6,7 +6,7 @@ function SideNav() {
     const dispatch = useDispatch();
 
     return(
-        <div className='overflow-y-auto bg-yellow-300 min-h-screen absolute w-80 backdrop-blur-md '>
+        <div className='bg-yellow-300'>
            hello
             <button onClick={() => dispatch(setNavState(!isOpen)) }> hello </button>
         </div>
