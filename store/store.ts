@@ -1,9 +1,9 @@
 import { configureStore } from '@reduxjs/toolkit';
-import counterReducer from '../services/state/shared/shared.slice';
+import sharedReducer from '../services/state/shared/shared.slice';
 
 export const store = configureStore({
     reducer: {
-        counterReducer
+        sharedReducer
     },
     devTools: process.env.NODE_ENV !== 'production',
 });

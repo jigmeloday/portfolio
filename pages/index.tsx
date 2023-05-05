@@ -7,8 +7,8 @@ export default function Home() {
 
   return (
     <main>
-      <div className='min-h-screen bg-primary-main text-main'>
-          <h1 className='font-9'>{ test }</h1>
+      <div className='min-h-screen bg-primary-main text-main '>
+          <h1 className='text-pink-400'>{ test }</h1>
           <button onClick={() => dispatch(increment())} >press me</button>
       </div>
     </main>
