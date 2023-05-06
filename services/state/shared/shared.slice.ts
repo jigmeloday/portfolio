@@ -1,41 +1,29 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit';
 import { RootState } from '@/store/store';
 
-type CounterState = {
-    value: number;
+type SharedState = {
+    navState: boolean;
 };
 
 export const initialState = {
-    value: 1,
-} as CounterState;
+    navState: false,
+} as SharedState;
 
-export const counter = createSlice({
-    name: 'counter',
+export const shared = createSlice({
+    name: 'shared',
     initialState,
     reducers: {
         reset: () => initialState,
-        increment: (state) => {
-            state.value += 1;
-        },
-        decrement: (state) => {
-            state.value -= 1;
-        },
-        incrementByAmount: (state, action: PayloadAction<number>) => {
-            state.value += action.payload;
-        },
-        decrementByAmount: (state, action: PayloadAction<number>) => {
-            state.value -= action.payload;
-        },
+        setNavState: (state, action: PayloadAction<boolean>) => {
+            state.navState = action.payload;
+        }
     },
 });
 
 export const {
-    increment,
-    incrementByAmount,
-    decrement,
-    decrementByAmount,
+    setNavState,
     reset,
-} = counter.actions;
+} = shared.actions;
 
-export const testValue = (state: RootState) => state.counterReducer.value;
-export default counter.reducer;
+export const selectCurrentNav = (state: RootState) => state.sharedReducer.navState;
+export default shared.reducer;
