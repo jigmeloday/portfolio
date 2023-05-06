@@ -19,13 +19,20 @@ module.exports = {
         9: '900'
       },
       colors: {
-        main: '#adadad',
-        light: '#dedede',
-        dark: '#797979'
+        primary: {
+          main: '#fae20a',
+          light: '#fcee6c',
+          dark: '#e1cb09',
+        },
+        text: {
+          main: '#adadad',
+          light: '#dedede',
+          dark: '#797979'
+        }
       },
       backgroundColor: {
         primary: {
-          main: '#1a1a1a',
+          main: '#333333',
           light: '#333333',
           dark: '#000000'
         },
