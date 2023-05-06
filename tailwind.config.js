@@ -33,7 +33,7 @@ module.exports = {
       backgroundColor: {
         primary: {
           main: '#333333',
-          light: '#333333',
+          light: '#1a1a1a',
           dark: '#000000'
         },
         secondary: {

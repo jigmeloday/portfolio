@@ -8,7 +8,7 @@ function Landing(){
             </div>
             <div className='pt-[38px] text-center'>
                 <h1 className='text-[40px] font-8'> Jigme Lodey </h1>
-                <p className='pt-[8px] text-[24px]'> I am Software Developer </p>
+                <span className='pt-[8px] text-[24px]'> I am Software <span className='text-primary-main'>Developer</span> </span>
                 <div className='py-[30px] flex gap-[18px] justify-center'>
                     {
                         SOCIAL_ICONS.map(({ id, name }) => (
