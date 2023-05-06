@@ -3,10 +3,8 @@ import {
     faContactCard,
     faDiagramProject,
     faHome,
-    faLaptop,
     faLaptopCode,
-    faStar,
-    faTrash, faUser
+    faUser
 } from '@fortawesome/free-solid-svg-icons';
 
 export const NAV_CONST: NavigationModel[] = [
