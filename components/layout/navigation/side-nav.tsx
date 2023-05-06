@@ -1,35 +1,4 @@
-import { NavigationModel } from '@/components/layout/model/navigation.model';
-import { RxDashboard } from 'react-icons/rx';
-import { FaBeer, FaLaptopCode, FaProjectDiagram } from 'react-icons/fa';
-import {AiOutlineMail} from 'react-icons/ai';
-
-const NAV_CONST: NavigationModel[] = [
-    {
-        id: '1',
-        icon: <RxDashboard />,
-        link: ''
-    },
-    {
-        id: '1',
-        icon: <FaBeer />,
-        link: '<faBeer />'
-    },
-    {
-        id: '1',
-        icon: <FaLaptopCode />,
-        link: ''
-    },
-    {
-        id: '1',
-        icon: <FaProjectDiagram />,
-        link: ''
-    },
-    {
-        id: '1',
-        icon: <AiOutlineMail />,
-        link: ''
-    }
-];
+import { NAV_CONST } from '@/components/icons/icons';
 
 function SideNav() {
     return(
