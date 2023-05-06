@@ -1,3 +1,4 @@
 #!/usr/bin/env sh
 . "$(dirname -- "$0")/_/husky.sh"
 yarn eslint
+npx tsc --noEmit && npx eslint . && npx eslint --fix .

@@ -2,7 +2,6 @@ import { NavigationModel } from '@/components/layout/model/navigation.model';
 import {
     faContactCard,
     faDiagramProject,
-    faFire,
     faHome,
     faLaptop,
     faLaptopCode,
