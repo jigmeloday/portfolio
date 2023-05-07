@@ -11,22 +11,22 @@ export const NAV_CONST: NavigationModel[] = [
         link: ''
     },
     {
-        id: '1',
+        id: '2',
         icon: <FaCoffee />,
         link: '<faBeer />'
     },
     {
-        id: '1',
+        id: '3',
         icon: <FaLaptopCode />,
         link: ''
     },
     {
-        id: '1',
+        id: '4',
         icon: <FaProjectDiagram />,
         link: ''
     },
     {
-        id: '1',
+        id: '5',
         icon: <AiOutlineMail />,
         link: ''
     }
@@ -42,11 +42,11 @@ export const SOCIAL_ICONS: HomeModel[] = [
         name: <AiOutlineInstagram />
     },
     {
-        id: '2',
+        id: '3',
         name: <AiOutlineGithub />
     },
     {
-        id: '2',
+        id: '4',
         name: <AiOutlineTwitter />
     }
 ];
