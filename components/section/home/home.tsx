@@ -1,16 +1,18 @@
 import { SOCIAL_ICONS } from '@/components/icons/icons';
 import { AnimatePresence, motion } from 'framer-motion';
+import img  from '../../../public/images/profile.png';
+import Image from 'next/image';
 
 function Landing(){
     return(
         <AnimatePresence>
             <div className='flex flex-col justify-center items-center w-screen min-h-screen '>
                 <motion.div
-                    initial={{ y:-100 }}
+                    initial={{ y:-100  }}
                     animate={{ y:0 }}
                     transition={{ duration: 0.9 }}
-                    className='flex items-center justify-center bg-primary-dark shadow-2xl  rounded-full w-[200px] h-[200px] ' >
-                    profile
+                    className='flex items-center justify-center bg-primary-dark shadow-2xl relative rounded-full w-[200px] h-[200px] overflow-hidden' >
+                    <Image src={img} alt='profile' height={240}  className='rounded-full'  />
                 </motion.div>
 
                 <div className='pt-[38px] text-center'>

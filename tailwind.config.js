@@ -25,9 +25,9 @@ module.exports = {
           dark: '#1f5a45',
         },
         text: {
-          main: '#adadad',
-          light: '#dedede',
-          dark: '#797979'
+          main: '#e6e6e6',
+          light: '#ffffff',
+          dark: '#999999'
         }
       },
       backgroundColor: {
