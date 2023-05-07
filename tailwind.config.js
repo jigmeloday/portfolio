@@ -20,9 +20,9 @@ module.exports = {
       },
       colors: {
         primary: {
-          main: '#fae20a',
-          light: '#fcee6c',
-          dark: '#e1cb09',
+          main: '#3EB489',
+          light: '#8bd2b8',
+          dark: '#1f5a45',
         },
         text: {
           main: '#adadad',
@@ -32,14 +32,14 @@ module.exports = {
       },
       backgroundColor: {
         primary: {
-          main: '#333333',
-          light: '#333333',
-          dark: '#000000'
+          main: '#2e3047',
+          light: '#212121',
+          dark: '#2e3047'
         },
         secondary: {
-          main: '#fae20a',
-          light: '#fcee6c',
-          dark: '#e1cb09',
+          main: '#3EB489',
+          light: '#8bd2b8',
+          dark: '#1f5a45',
         },
       },
     },
