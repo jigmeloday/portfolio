@@ -1,6 +1,6 @@
 function About() {
     return(
-        <div className='min-h-screen'>
+        <div className='min-h-screen flex justify-center'>
             hello
         </div>
     );

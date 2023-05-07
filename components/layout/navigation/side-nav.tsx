@@ -6,7 +6,7 @@ function SideNav() {
             {
                 NAV_CONST.map(({ icon, id}) => (
                     <div key={id} className='flex justify-center px-[4px] py-[8px] '>
-                        <div className='text-[14px] items-center cursor-pointer hover:text-primary-dark hover:scale-150 transition delay-1500 duration-500 ease-in-out'>
+                        <div className='text-[18px] items-center cursor-pointer hover:text-primary-light hover:scale-150 transition delay-1500 duration-500 ease-in-out'>
                             {icon}
                         </div>
                     </div>

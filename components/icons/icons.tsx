@@ -1,6 +1,6 @@
 import { NavigationModel } from '@/components/layout/model/navigation.model';
 import { RxDashboard } from 'react-icons/rx';
-import { FaBeer, FaLaptopCode, FaProjectDiagram } from 'react-icons/fa';
+import {  FaCoffee, FaLaptopCode, FaProjectDiagram } from 'react-icons/fa';
 import { AiOutlineMail, AiOutlineLinkedin, AiOutlineInstagram, AiOutlineGithub, AiOutlineTwitter } from 'react-icons/ai';
 import { HomeModel } from '@/components/section/home/model/home.model';
 
@@ -12,7 +12,7 @@ export const NAV_CONST: NavigationModel[] = [
     },
     {
         id: '1',
-        icon: <FaBeer />,
+        icon: <FaCoffee />,
         link: '<faBeer />'
     },
     {
