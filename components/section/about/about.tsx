@@ -22,7 +22,7 @@ function About() {
                     <div className='py-[32px] text-justify'>
                         {DUMMY}
                     </div>
-                    <div className='flex flex-row py-8 justify-center'>
+                    <div className='flex flex-row py-8 justify-center gap-[38px]'>
                         {
                             ABOUT_BOX.map(({ id,  title, description }) => (
                                 <div

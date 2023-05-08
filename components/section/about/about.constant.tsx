@@ -7,5 +7,17 @@ export const ABOUT_BOX: AboutModel[] = [
         icon: <></>,
         title: 'test',
         description: 'hello'
+    },
+    {
+        id: '2',
+        icon: <></>,
+        title: 'test',
+        description: 'hello'
+    },
+    {
+        id: '2',
+        icon: <></>,
+        title: 'test',
+        description: 'hello'
     }
 ];
