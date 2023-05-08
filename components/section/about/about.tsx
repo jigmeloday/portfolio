@@ -15,11 +15,11 @@ function About() {
                 {/*</motion.div>*/}
                 <div className='w-[80%] justify-start'>
                     <motion.h1
-                        className='font-6 text-[32px]'
+                        className='font-6 text-[32px] text-primary-main'
                     >
                         About Me
                     </motion.h1>
-                    <div className='py-[32px] text-justify'>
+                    <div className='py-[32px] text-justify text-text-dark'>
                         {DUMMY}
                     </div>
                     <div className='flex flex-row py-8 justify-center gap-[38px]'>
