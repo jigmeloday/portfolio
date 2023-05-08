@@ -5,24 +5,30 @@ function About() {
     return(
         <AnimatePresence>
             <div className='min-h-screen justify-center flex px-[150px] py-[6%] '>
-                {/*<motion.div*/}
-                {/*    initial={{ opacity: 0, y: -100 }}*/}
-                {/*    whileInView={{ opacity: 1, y: 0 }}*/}
-                {/*    viewport={{ once: true, amount: 0.8 }}*/}
-                {/*    transition={{ type: 'spring', bounce: 0.1 }}*/}
-                {/*>*/}
-                {/*    hello*/}
-                {/*</motion.div>*/}
                 <div className='w-[80%] justify-start'>
                     <motion.h1
+                        initial={{ opacity: 0, y: -100 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true, amount: 0.9 }}
+                        transition={{ type: 'spring', bounce: 0.1, delay: 0.5 }}
                         className='font-6 text-[32px] text-primary-main'
                     >
                         About Me
                     </motion.h1>
-                    <div className='py-[32px] text-justify text-text-dark'>
+                    <motion.div
+                        initial={{ opacity: 0, y: -100 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true, amount: 0.8 }}
+                        transition={{ type: 'spring', bounce: 0.1, delay: 0.6 }}
+                        className='py-[32px] text-justify text-text-dark'>
                         {DUMMY}
-                    </div>
-                    <div className='flex flex-row py-8 justify-center gap-[38px]'>
+                    </motion.div>
+                    <motion.div
+                        initial={{ opacity: 0, y: -100 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true, amount: 0.8 }}
+                        transition={{ type: 'spring', bounce: 0.1, delay: 0.7 }}
+                        className='flex flex-row py-8 justify-center gap-[38px]'>
                         {
                             ABOUT_BOX.map(({ id,  title, description }) => (
                                 <div
@@ -36,7 +42,7 @@ function About() {
                                 </div>
                             ))
                         }
-                    </div>
+                    </motion.div>
                 </div>
             </div>
         </AnimatePresence>
