@@ -1,5 +1,5 @@
 import { AnimatePresence, motion } from 'framer-motion';
-import { DUMMY } from '@/components/section/about/about.constant';
+import { ABOUT_BOX, DUMMY } from '@/components/section/about/about.constant';
 
 function About() {
     return(
@@ -22,8 +22,20 @@ function About() {
                     <div className='py-[32px] text-justify'>
                         {DUMMY}
                     </div>
-                    <div>
-
+                    <div className='flex flex-row py-8 justify-center'>
+                        {
+                            ABOUT_BOX.map(({ id,  title, description }) => (
+                                <div
+                                    key={id}
+                                    className='w-[250px] h-[200px] overflow-hidden transition duration-150 group relative rounded-[16px]'
+                                >
+                                    <div className='min-h-full bg-primary-main shadow-2xl relative overflow-hidden'>{title}</div>
+                                    <div className='min-h-full w-full bg-secondary-main absolute flex items-center justify-center top-60 group-hover:top-0 opacity-0 group-hover:opacity-100 transition-all duration-500'>
+                                        {description}
+                                    </div>
+                                </div>
+                            ))
+                        }
                     </div>
                 </div>
             </div>
