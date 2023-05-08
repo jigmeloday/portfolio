@@ -30,7 +30,7 @@ function About() {
                                     className='w-[250px] h-[200px] overflow-hidden transition duration-150 group relative rounded-[16px]'
                                 >
                                     <div className='min-h-full bg-primary-main shadow-2xl relative overflow-hidden'>{title}</div>
-                                    <div className='min-h-full w-full bg-secondary-main absolute flex items-center justify-center top-60 group-hover:top-0 opacity-0 group-hover:opacity-100 transition-all duration-500'>
+                                    <div className='min-h-full w-full bg-hover-main absolute flex items-center justify-center top-60 group-hover:top-0 opacity-0 group-hover:opacity-100 transition-all duration-500'>
                                         {description}
                                     </div>
                                 </div>

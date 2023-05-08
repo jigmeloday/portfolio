@@ -41,6 +41,9 @@ module.exports = {
           light: '#8bd2b8',
           dark: '#1f5a45',
         },
+        hover: {
+          main: 'rgb(89,91,122)'
+        }
       },
     },
   },
