@@ -29,7 +29,7 @@ function About() {
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true, amount: 0.8 }}
                         transition={{ type: 'spring', bounce: 0.1, delay: 0.7 }}
-                        className='flex flex-col  items-center md:flex-row py-8 justify-center gap-[38px]'>
+                        className='flex flex-col  items-center md:flex-row py-8  gap-[12px] justify-center lg:justify-between'>
                         {
                             ABOUT_BOX.map(({ id, icon,  title, description }) => (
                                 <div
