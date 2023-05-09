@@ -25,7 +25,7 @@ module.exports = {
           dark: '#1f5a45',
         },
         text: {
-          main: '#e6e6e6',
+          main: '#c5c5c5',
           light: '#ffffff',
           dark: '#999999'
         }
@@ -41,6 +41,9 @@ module.exports = {
           light: '#8bd2b8',
           dark: '#1f5a45',
         },
+        hover: {
+          main: 'rgb(89,91,122)'
+        }
       },
     },
   },
