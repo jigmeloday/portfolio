@@ -5,8 +5,9 @@ import Image from 'next/image';
 
 function Landing(){
     return(
-        <AnimatePresence>
+
             <div className='flex flex-col justify-center items-center w-screen min-h-screen '>
+                <AnimatePresence>
                 <motion.div
                     initial={{ y:-100  }}
                     animate={{ y:0 }}
@@ -45,8 +46,9 @@ function Landing(){
                     </div>
 
                 </div>
+                </AnimatePresence>
+
             </div>
-        </AnimatePresence>
     );
 }
 
