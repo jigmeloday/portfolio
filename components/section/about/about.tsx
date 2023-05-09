@@ -21,7 +21,7 @@ function About() {
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true, amount: 0.8 }}
                         transition={{ type: 'spring', bounce: 0.1, delay: 0.6 }}
-                        className='py-[32px] text-justify text-text-dark'>
+                        className='py-[32px] text-justify text-text-main'>
                         {DUMMY}
                     </motion.div>
                     <motion.div
