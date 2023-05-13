@@ -5,7 +5,6 @@ function About() {
     return(
             <div className='min-h-screen justify-center flex lg:px-[150px] py-[6%] '>
                 <AnimatePresence>
-
                 <div className='w-[80%] justify-start'>
                     <motion.h1
                         initial={{ opacity: 0, y: -100 }}
