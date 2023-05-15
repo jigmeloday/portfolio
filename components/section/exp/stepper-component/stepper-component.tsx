@@ -15,7 +15,8 @@ function StepperComponent() {
                                 className='flex items-center p-6 leading-[1.3rem] no-underline after:bg-secondary-main focus:outline-none dark:after:bg-secondary-main '>
                                 <span
                                     className='mr-3 cursor-pointer flex h-[14px] w-[14px] items-center justify-center rounded-full bg-secondary-light '/>
-                                <span className={`cursor-pointer font-2 ${open === id ? 'text-primary-main' : 'text-text-main '}`}>
+                                <span
+                                    className={ `cursor-pointer font-2 ${ open === id ? 'text-primary-main' : 'text-text-main ' }` }>
                                     { title }
                                 </span>
                             </div>
@@ -25,14 +26,14 @@ function StepperComponent() {
                                     <div className='w-[80%]'>
                                         <span className='font-6 text-[22px] text-text-light'>Frontend Developer</span>
                                         <div className='pt-[12px] pb-[6px] font-3 text-[14px] text-text-dark'>
-                                            <span>{`${joined} - ${ended || 'Ongoing' }`}</span>
+                                            <span>{ `${ joined } - ${ ended || 'Ongoing' }` }</span>
                                         </div>
                                         <span className='text-text-main text-[16px] font-3'>
                                             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                                         </span>
                                         <div className='flex gap-[12px] pt-4'>
                                             {
-                                                stack?.map(({ id, name }) =><Chip key={id}>{name}</Chip> )
+                                                stack?.map( ( { id, name } ) => <Chip key={ id }>{ name }</Chip> )
                                             }
 
                                         </div>
@@ -40,9 +41,7 @@ function StepperComponent() {
                                 }
                             </div>
 
-                        </li>)
-                )
-            }
+                        </li>) ) }
         </ul>
     );
 }
