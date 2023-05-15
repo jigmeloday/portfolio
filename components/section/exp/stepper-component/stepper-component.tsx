@@ -27,14 +27,14 @@ function StepperComponent() {
                                         animate={{ opacity: 1}}
                                         transition={{ duration: 0.8 }}
                                         className='ml-6 px-6 transition-[height] duration-200 ease-in-out'>
-                                        <div className='w-[80%] transition duration-200 ease-in-out'>
+                                        <div className='lg:w-[80%] transition duration-200 ease-in-out'>
                                             <span className='font-6 text-[22px] text-text-light'>Frontend Developer</span>
                                             <div className='pt-[12px] pb-[6px] font-3 text-[14px] text-text-dark'>
                                                 <span>{ `${ joined } - ${ ended || 'Ongoing' }` }</span>
                                             </div>
                                             <span className='text-text-main text-[16px] font-3'>
                                             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                                    </span>
+                                            </span>
                                             <div className='flex gap-[12px] pt-4'>
                                                 {
                                                     stack?.map( ( { id, name } ) => <Chip key={ id }>{ name }</Chip> )
