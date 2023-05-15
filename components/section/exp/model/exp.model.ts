@@ -5,5 +5,10 @@ export interface ExpModel {
     ended?: string;
     currently?: boolean
     description?: string;
-    stack?: string
+    stack?: Stack[]
+}
+
+export interface Stack{
+    id: string;
+    name: string
 }

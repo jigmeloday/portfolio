@@ -7,7 +7,7 @@ function StepperComponent() {
     return (
         <ul className='relative m-0 w-full list-none overflow-hidden p-0 transition-[height] duration-200 ease-in-out'>
             {
-                EXP_DUMMY.map( ( { id, title, joined, ended }, index ) => {
+                EXP_DUMMY.map( ( { id, title, joined, ended, stack }, index ) => {
                     return (
                         <li key={ id } onClick={ () => setOpen( id ) }
                             className={ `relative h-fit ${ EXP_DUMMY.length !== index + 1 && 'after:absolute after:left-[30px] after:top-[56px] after:mt-px after:h-[calc(100%-2.45rem)] after:w-px after:bg-secondary-main  dark:after:bg-secondary-main' }` }>
@@ -30,12 +30,11 @@ function StepperComponent() {
                                         <span className='text-text-main text-[16px] font-3'>
                                             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                                         </span>
-                                        <div className='pt-4'>
-                                            <Chip>
-                                                {
-                                                    
-                                                }
-                                            </Chip>
+                                        <div className='flex gap-[12px] pt-4'>
+                                            {
+                                                stack?.map(({ id, name }) =><Chip key={id}>{name}</Chip> )
+                                            }
+
                                         </div>
                                     </div>
                                 }
