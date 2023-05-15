@@ -8,11 +8,11 @@ export const EXP_DUMMY: ExpModel[] = [
         currently: true,
         stack:[
             {
-                id: '1',
+                id: '11',
                 name: 'React'
             },
             {
-                id: '1',
+                id: '12',
                 name: 'Angular'
             }
         ]
@@ -25,7 +25,7 @@ export const EXP_DUMMY: ExpModel[] = [
         ended: 'Month 1',
         stack:[
             {
-                id: '1',
+                id: '21',
                 name: 'React'
             }
         ]
