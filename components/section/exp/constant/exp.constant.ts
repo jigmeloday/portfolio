@@ -3,14 +3,14 @@ import { ExpModel } from '@/components/section/exp/model/exp.model';
 export const EXP_DUMMY: ExpModel[] = [
     {
         id: '1',
-        title: 'Developer'
+        title: 'SELISE'
     },
     {
         id: '2',
-        title: 'Developer'
+        title: 'Dragon Coder'
     },
     {
         id: '3',
-        title: 'Developer'
+        title: 'Bhutan Data Science'
     }
 ];
