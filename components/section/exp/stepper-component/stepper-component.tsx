@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { EXP_DUMMY } from '@/components/section/exp/constant/exp.constant';
+import Chip from '@/components/chip/chip';
 
 function StepperComponent() {
     const [ open, setOpen ] = useState( '1' );
@@ -30,7 +31,9 @@ function StepperComponent() {
                                             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                                         </span>
                                         <div className='py-2'>
-                                            hell
+                                            <Chip>
+                                                hello
+                                            </Chip>
                                         </div>
                                     </div>
                                 }
