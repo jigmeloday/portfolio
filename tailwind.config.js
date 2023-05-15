@@ -30,6 +30,13 @@ module.exports = {
           dark: '#999999'
         }
       },
+      borderColor: {
+        primary: {
+          main: '#3EB489',
+          light: '#8bd2b8',
+          dark: '#1f5a45',
+        }
+      },
       backgroundColor: {
         primary: {
           main: '#2e3047',

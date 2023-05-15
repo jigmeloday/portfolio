@@ -30,9 +30,11 @@ function StepperComponent() {
                                         <span className='text-text-main text-[16px] font-3'>
                                             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                                         </span>
-                                        <div className='py-2'>
+                                        <div className='pt-4'>
                                             <Chip>
-                                                hello
+                                                {
+                                                    
+                                                }
                                             </Chip>
                                         </div>
                                     </div>
