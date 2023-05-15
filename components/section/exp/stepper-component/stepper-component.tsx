@@ -6,7 +6,7 @@ function StepperComponent() {
     return (
         <ul className='relative m-0 w-full list-none overflow-hidden p-0 transition-[height] duration-200 ease-in-out'>
             {
-                EXP_DUMMY.map( ( { id, title, currently, joined }, index ) => {
+                EXP_DUMMY.map( ( { id, title, joined, ended }, index ) => {
                     return (
                         <li key={ id } onClick={ () => setOpen( id ) }
                             className={ `relative h-fit ${ EXP_DUMMY.length !== index + 1 && 'after:absolute after:left-[30px] after:top-[56px] after:mt-px after:h-[calc(100%-2.45rem)] after:w-px after:bg-secondary-main  dark:after:bg-secondary-main' }` }>
@@ -22,17 +22,16 @@ function StepperComponent() {
                                 {
                                     open === id &&
                                     <div className='w-[80%]'>
-                                        <div>Frontend Developer</div>
-                                        <div>
-                                            <span>{joined}</span>
-                                            -
-                                            {
-                                                currently ? <span>Now</span> : <span>end</span>
-                                            }
+                                        <span className='font-6 text-[22px] text-text-light'>Frontend Developer</span>
+                                        <div className='pt-[12px] pb-[6px] font-3 text-[14px] text-text-dark'>
+                                            <span>{`${joined} - ${ended || 'Ongoing' }`}</span>
                                         </div>
                                         <span className='text-text-main text-[16px] font-3'>
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                                         </span>
+                                        <div className='py-2'>
+                                            hell
+                                        </div>
                                     </div>
                                 }
                             </div>
