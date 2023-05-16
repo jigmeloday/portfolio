@@ -22,8 +22,8 @@ function StepperComponent() {
                                 {
                                     open === id &&
                                     <motion.div
-                                        initial={{ opacity: 0, scaleY: 0.1 }}
-                                        animate={{ opacity: 1, scaleY: 1}}
+                                        initial={{ opacity: 0 }}
+                                        animate={{ opacity: 1}}
                                         transition={{ duration: 0.8 }}
                                         className='ml-6 px-6 transition-[height] duration-200 ease-in-out'>
                                         <div className='lg:w-[80%] transition duration-200 ease-in-out'>
