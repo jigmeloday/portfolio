@@ -3,9 +3,10 @@ import { ExpModel } from '@/components/section/exp/model/exp.model';
 export const EXP_DUMMY: ExpModel[] = [
     {
         id: '1',
-        title: 'SELISE',
-        joined: 'Month 1',
-        currently: true,
+        title: 'Full Time',
+        company: 'SELISE',
+        description: '',
+        joined: 'JAN 2021',
         stack:[
             {
                 id: '11',
@@ -19,22 +20,44 @@ export const EXP_DUMMY: ExpModel[] = [
     },
     {
         id: '2',
-        title: 'Dragon Coder',
-        joined: 'Month 1',
-        currently: false,
-        ended: 'Month 1',
+        title: 'Full Time',
+        company: 'SELISE',
+        description: '',
+        joined: 'JAN 2021',
         stack:[
             {
                 id: '21',
                 name: 'React'
+            },
+            {
+                id: '22',
+                name: 'Angular'
+            },
+            {
+                id: '23',
+                name: 'React Native'
             }
         ]
     },
     {
         id: '3',
-        joined: 'Month 1',
-        currently: false,
-        ended: 'Month 1',
-        title: 'Bhutan Data Science'
+        title: 'Full Time',
+        company: 'SELISE',
+        description: '',
+        joined: 'JAN 2021',
+        stack:[
+            {
+                id: '31',
+                name: 'React'
+            },
+            {
+                id: '32',
+                name: 'Angular'
+            },
+            {
+                id: '33',
+                name: 'Node js'
+            }
+        ]
     }
 ];

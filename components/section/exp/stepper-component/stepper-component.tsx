@@ -8,7 +8,7 @@ function StepperComponent() {
     return (
         <ul className='relative m-0 w-full list-none overflow-hidden p-0 transition duration-200 ease-in-out'>
             {
-                EXP_DUMMY.map( ( { id, title, joined, ended, stack }, index ) =>
+                EXP_DUMMY.map( ( { id, title, joined, ended, stack, company }, index ) =>
                     (
                         <li key={ id } onClick={ () => setOpen( id ) }
                             className={ `relative h-fit ${ EXP_DUMMY.length !== index + 1  && 'after:absolute after:left-[30px] after:top-[56px] after:mt-px after:h-[calc(100%-2.45rem)] after:w-px after:bg-secondary-main  ' } transition duration-200 ease-in-out` }>
@@ -16,7 +16,7 @@ function StepperComponent() {
                                 <span className='mr-3 cursor-pointer flex h-[14px] w-[14px] items-center justify-center rounded-full bg-secondary-light transition duration-200 ease-in-out '/>
                                 <span
                                     className={ `cursor-pointer font-2 ${ open === id ? 'text-primary-main' : 'text-text-main ' } transition duration-200 ease-in-out` }>
-                                    { title }
+                                    { company }
                                 </span>
                             </div>
                             <AnimatePresence>
@@ -28,8 +28,8 @@ function StepperComponent() {
                                         transition={{ duration: 0.8 }}
                                         className='ml-6 px-6 transition-[height] duration-200 ease-in-out'>
                                         <div className='lg:w-[80%] transition duration-200 ease-in-out'>
-                                            <span className='font-6 text-[22px] text-text-light'>Frontend Developer</span>
-                                            <div className='pt-[12px] pb-[6px] font-3 text-[14px] text-text-dark'>
+                                            <span className='font-6 text-[22px] text-text-light'>{title}</span>
+                                            <div className='pt-[2px] pb-[8px] font-3 text-[14px] text-text-dark'>
                                                 <span>{ `${ joined } - ${ ended || 'Ongoing' }` }</span>
                                             </div>
                                             <span className='text-text-main text-[16px] font-3'>

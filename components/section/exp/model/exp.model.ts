@@ -1,9 +1,9 @@
 export interface ExpModel {
     id: string
     title?: string;
+    company?: string
     joined?: string;
     ended?: string;
-    currently?: boolean
     description?: string;
     stack?: Stack[]
 }
