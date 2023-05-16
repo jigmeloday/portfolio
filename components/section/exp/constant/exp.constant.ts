@@ -5,7 +5,7 @@ export const EXP_DUMMY: ExpModel[] = [
         id: '1',
         title: 'Full Time',
         company: 'SELISE',
-        description: '',
+        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
         joined: 'JAN 2021',
         stack:[
             {
@@ -22,7 +22,7 @@ export const EXP_DUMMY: ExpModel[] = [
         id: '2',
         title: 'Full Time',
         company: 'SELISE',
-        description: '',
+        description: '                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.\n',
         joined: 'JAN 2021',
         stack:[
             {
@@ -43,7 +43,7 @@ export const EXP_DUMMY: ExpModel[] = [
         id: '3',
         title: 'Full Time',
         company: 'SELISE',
-        description: '',
+        description: '                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.\n',
         joined: 'JAN 2021',
         stack:[
             {

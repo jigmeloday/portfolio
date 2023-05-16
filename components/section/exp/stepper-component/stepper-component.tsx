@@ -8,7 +8,7 @@ function StepperComponent() {
     return (
         <ul className='relative m-0 w-full list-none overflow-hidden p-0 transition duration-200 ease-in-out'>
             {
-                EXP_DUMMY.map( ( { id, title, joined, ended, stack, company }, index ) =>
+                EXP_DUMMY.map( ( { id, title, joined, description, ended, stack, company }, index ) =>
                     (
                         <li key={ id } onClick={ () => setOpen( id ) }
                             className={ `relative h-fit ${ (EXP_DUMMY.length !== index + 1 || open === id )  && 'after:absolute after:left-[30px] after:top-[56px] after:mt-px after:h-[calc(100%-2.45rem)] after:w-px after:bg-secondary-main  ' } transition duration-200 ease-in-out` }>
@@ -44,7 +44,7 @@ function StepperComponent() {
                                                 animate={{ opacity: 1}}
                                                 transition={{ duration: 0.8, delay: 0.4 }}
                                                 className='text-text-main text-[16px] font-3'>
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                                {description}
                                             </motion.span>
                                             <motion.div
                                                 initial={{ opacity: 0 }}
