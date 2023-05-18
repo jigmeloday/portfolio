@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 import { Formik } from 'formik';
 
 import Input from '@/components/custom-input/input';
+import Button from '@/components/custom-botton/button';
 
 function Contact() {
     return(
@@ -19,18 +20,22 @@ function Contact() {
             <div className='py-8'>
                 <Formik
                     initialValues={{ test: '' }}
-                    onSubmit={()=> alert('working')}
+                    onSubmit={(values)=> alert(values)}
                 >
                     {({
                           values,
                           handleChange,
+                          handleSubmit
 
                       }) => (
-                         <Input
-                             name='test'
-                             value={values?.test}
-                             onChange={handleChange}
+                         <>
+                             <Input
+                                 name='test'
+                                 value={values?.test}
+                                 onChange={handleChange}
                              />
+                             <Button click={handleSubmit} label='Test' />
+                         </>
 
                     )}
                 </Formik>
