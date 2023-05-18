@@ -4,5 +4,7 @@ export interface InputProps{
     label:string,
     placeholder?: string,
     onChange: any
+    rows?: number,
+    cols?: number,
     width?: string;
 }
