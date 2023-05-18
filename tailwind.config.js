@@ -34,7 +34,7 @@ module.exports = {
         primary: {
           main: '#3EB489',
           light: '#8bd2b8',
-          dark: '#1f5a45',
+          dark: 'rgba(31,90,69,0.4)',
         }
       },
       backgroundColor: {

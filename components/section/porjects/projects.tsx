@@ -33,11 +33,13 @@ function Projects() {
                                 whileInView={ { opacity: 1, y: 0 } }
                                 viewport={ { once: true, amount: 0.9 } }
                                 transition={ { type: 'spring', bounce: 0.1, delay: 0.5 } }
-                                key={id} className='w-fit h-fit shadow-2xl  rounded-[8px] basis-[calc((100%/3)-24px)]'>
-                                <div className='relative'>
-                                    <Image src={ image } alt='project' height={ 240 } className='rounded-t-[8px] hover:opacity-[0.5] transition duration-300 ease-in-out'/>
+                                key={id}
+                                className='w-fit h-fit shadow-2xl p-[12px] border border-primary-dark rounded-[18px] basis-[calc((100%/3)-24px)]'>
+                                <div className='relative '>
+                                    <div className='w-[100%] h-[100%] absolute rounded-t-[8px] bg-gradient-to-r from-[#2e3047] via-white-0 opacity-[0.7]'/>
+                                    <Image src={ image } alt='project' height={ 240 } className='rounded-t-[8px]  transition duration-300 ease-in-out'/>
                                 </div>
-                                <div className='py-2 px-4'>
+                                <div className='pt-[12px]'>
                                     <h1 className='font-6 text-[18px] text-primary-main'>{name}</h1>
                                     <div className='pt-1'>
                                         <span className='font-2 text-[14px]'>
