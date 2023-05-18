@@ -4,6 +4,7 @@ import { Formik } from 'formik';
 
 import Input from '@/components/custom-input/input';
 import Button from '@/components/custom-botton/button';
+import TextArea from '@/components/custom-input/text-area';
 
 function Contact() {
     return(
@@ -36,6 +37,7 @@ function Contact() {
                                  onChange={handleChange}
                                  width='250px'
                              />
+                             <TextArea onChange={handleChange} value={values.test} label='Test' name='test' />
                              <Button variant='outlined' click={handleSubmit} label='Test'/>
                          </div>
 
