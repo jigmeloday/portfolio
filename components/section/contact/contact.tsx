@@ -30,10 +30,11 @@ function Contact() {
                       }) => (
                          <div className='w-full'>
                              <Input
+                                 label='Test'
                                  name='test'
                                  value={values?.test}
                                  onChange={handleChange}
-                                 width='200px'
+                                 width='250px'
                              />
                              <Button click={handleSubmit} label='Test' />
                          </div>
