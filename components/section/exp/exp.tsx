@@ -15,9 +15,14 @@ export function Exp() {
                 >
                    My Journey.
                 </motion.h1>
-                <div className='py-8'>
+                <motion.div
+                    initial={ { opacity: 0 } }
+                    whileInView={ { opacity: 1 } }
+                    viewport={ { once: true, amount: 0.9 } }
+                    transition={ { delay: 0.5 } }
+                    className='py-8'>
                     <StepperComponent />
-                </div>
+                </motion.div>
             </CustomContainer>
         </AnimatePresence>
     );
