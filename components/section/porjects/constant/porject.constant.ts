@@ -1,47 +1,50 @@
 import { Projects } from '@/components/section/porjects/model/project.model';
-import img from '../../../../public/images/naykabgokap.png';
-
+import naykabgokab from '../../../../public/images/projects/naykap-gokab.png';
+import linktobhutan from '../../../../public/images/projects/linktobhutan.png';
+import btnHighlight from '../../../../public/images/projects/btnhighlight.png';
+import shopperon from '../../../../public/images/projects/shopperon.png';
 export const PROJECTS: Projects[] = [
     {
         id: '1',
         name: 'Naykap Gokab',
         link: '',
-        image: img,
-        description: 'something goes here'
+        image: naykabgokab,
+        description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. '
     },
     {
         id: '2',
-        name: 'Naykap Gokab',
+        name: 'Link to Bhutan',
         link: '',
-        image: img,
-        description: 'something goes here'
+        image: linktobhutan,
+        description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. '
     },
     {
         id: '3',
-        name: 'Naykap Gokab',
+        name: 'Bhutan Highlight',
         link: '',
-        image: img,
-        description: 'something goes here'
+        image: btnHighlight,
+        description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. '
     },
     {
         id: '4',
-        name: 'Naykap Gokab',
+        name: 'Shopperon',
         link: '',
-        image: img,
-        description: 'something goes here'
+        image: shopperon,
+        description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. '
     },
     {
         id: '5',
-        name: 'Naykap Gokab',
+        name: 'Link to Bhutan',
         link: '',
-        image: img,
-        description: 'something goes here'
+        image: linktobhutan,
+        description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. '
     },
     {
         id: '6',
-        name: 'Naykap Gokab',
+        name: 'Bhutan Highlight',
         link: '',
-        image: img,
-        description: 'something goes here'
-    }
+        image: btnHighlight,
+        description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. '
+    },
+
 ];
