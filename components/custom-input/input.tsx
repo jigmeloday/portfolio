@@ -2,16 +2,16 @@ import { useState } from 'react';
 import { InputProps } from '@/components/custom-input/model/input.model';
 
 function Input(props: InputProps){
-    const { value, name, onChange } = props;
+    const { value, name, onChange, width } = props;
     const [isFocus, setFocus] = useState<boolean>();
     // console.log(value)
     return (
-        <div className='relative  border w-fit px-2 h-[44px] rounded-[4px]'>
+        <div className={'relative  border w-fit px-2 h-[46px] rounded-[4px]'}>
             <div className='flex items-center absolute h-full'>
-                <label className={`  transition delay-150 duration-300 ease-in-out ${isFocus || value ? '-translate-y-[22px] bg-[#43455c]': 'top-0'}`}>hello</label>
+                <label className={`  transition delay-150 duration-200 ease-in-out ${isFocus || value ? '-translate-y-[25px] bg-[#43455c]': 'top-0'}`}>hello</label>
 
             </div>
-            <input className='flex bg-transparent h-full focus:border-transparent outline-none focus:ring-0 '
+            <input className={`flex bg-transparent h-full focus:border-transparent outline-none focus:ring-0 w-[${width}]`}
                    name={name}
                    onChange={onChange}
                    value={value}

@@ -28,14 +28,15 @@ function Contact() {
                           handleSubmit
 
                       }) => (
-                         <>
+                         <div className='w-full'>
                              <Input
                                  name='test'
                                  value={values?.test}
                                  onChange={handleChange}
+                                 width='200px'
                              />
                              <Button click={handleSubmit} label='Test' />
-                         </>
+                         </div>
 
                     )}
                 </Formik>
