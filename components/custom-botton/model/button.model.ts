@@ -1,4 +1,6 @@
 export interface ButtonProps{
     click: () => void,
-    label: string
+    label: string,
+    variant: 'outlined' | 'contained' | 'text',
+    className?: string,
 }

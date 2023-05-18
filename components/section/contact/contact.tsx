@@ -36,7 +36,7 @@ function Contact() {
                                  onChange={handleChange}
                                  width='250px'
                              />
-                             <Button click={handleSubmit} label='Test' />
+                             <Button variant='outlined' click={handleSubmit} label='Test'/>
                          </div>
 
                     )}
