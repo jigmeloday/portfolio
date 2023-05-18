@@ -24,7 +24,7 @@ function Projects() {
                                     </div>
                                     <div className='flex justify-center w-full py-4 ' >
                                         <span
-                                            className='cursor-pointer font-2 text-primary-light hover:text-primary-main transition duration-150 ease-in-out'>
+                                            className='cursor-pointer font-2 text-primary-light hover:text-primary-main transition duration-300 ease-in-out'>
                                             Read More {link}
                                         </span>
                                     </div>
