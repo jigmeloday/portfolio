@@ -18,7 +18,7 @@ export const ABOUT_BOX: AboutModel[] = [
         description: 'I\'ve been a website developer since 2018, starting with pure CSS, JS, and HTML. Through internships, I learned different frameworks and libraries, and now I work as a professional web developer.'
     },
     {
-        id: '2',
+        id: '3',
         icon: <MdOutlineDesignServices/>,
         title: 'Design Application',
         description: 'Design is my second passion, and I took a crash course to learn the basics, including color selection. Though I am not a professional designer, I create designs for small-scale and personal projects using Figma, which I find easy to use.'
