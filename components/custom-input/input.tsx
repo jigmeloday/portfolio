@@ -5,7 +5,7 @@ function Input(props: InputProps){
     const { value, name, onChange, width, label } = props;
     const [isFocus, setFocus] = useState<boolean>();
     return (
-        <div className='relative h-[44px] border w-fit px-2 rounded-[4px]'>
+        <div className={`relative ${isFocus || value ? 'border-primary-dark': 'border-primary-main'} transition delay-150 duration-200 ease-in-out h-[44px] border-2 border-primary-main w-fit px-2 rounded-[4px]`}>
             <div className='flex items-center absolute h-full'>
                 <label className={`transition delay-150 duration-200 ease-in-out ${isFocus || value ? '-translate-y-[24px] bg-[#43455c]': 'top-0'}`}>
                     {label}

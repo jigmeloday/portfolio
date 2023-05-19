@@ -37,7 +37,7 @@ function Contact() {
                                  onChange={handleChange}
                                  width='250px'
                              />
-                             <TextArea cols={1} onChange={handleChange} value={values.test} label='Test' name='test' />
+                             <TextArea cols={40} rows={10} onChange={handleChange} value={values.test} label='Test' name='test' />
                              <Button variant='outlined' click={handleSubmit} label='Test'/>
                          </div>
 
