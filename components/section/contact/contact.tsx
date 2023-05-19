@@ -19,13 +19,23 @@ function Contact() {
             >
                 Contact Me
             </motion.h1>
-            <div className='flex lg:flex-row flex-col py-8 gap-[6%]'>
+            <div className='flex lg:flex-row flex-col pt-8 gap-[6%]'>
                 <div className='lg:w-[50%] w-full'>
-                    <div className='flex lg:flex-col gap-[20px] '>
+                    <div className='flex lg:flex-col gap-[32px] my-[32px]'>
                         {
                             CONTACT_INFO.map(({ id, icon }) => (
-                                <div key={id}>
-                                    {icon}
+                                <div
+                                    key={id}
+                                    className='flex py-[12px] lg:flex-row flex-col items-center gap-[14px] lg:justify-start justify-center'>
+                                    <div className='flex bg-secondary-main h-[54px] w-[54px] rounded-full items-center justify-center cursor-pointer'>
+                                        <span className='text-[18px]'>
+                                            {icon}
+                                        </span>
+                                    </div>
+                                    <div className='flex flex-col'>
+                                        <span className='font-4 text-text-main'>Email</span>
+                                        <span className='font-2 text-[14px] text-text-main'>jigmelodey@gmail.com</span>
+                                    </div>
                                 </div>
                             ))
                         }

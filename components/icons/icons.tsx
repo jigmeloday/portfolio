@@ -1,9 +1,10 @@
 import { NavigationModel } from '@/components/layout/model/navigation.model';
 import { RxDashboard } from 'react-icons/rx';
-import {  FaCoffee, FaLaptopCode, FaProjectDiagram } from 'react-icons/fa';
+import { FaCoffee, FaLaptopCode, FaMapMarkerAlt, FaProjectDiagram } from 'react-icons/fa';
 import { AiOutlineMail, AiOutlineLinkedin, AiOutlineInstagram, AiOutlineGithub, AiOutlineTwitter } from 'react-icons/ai';
 import { HomeModel } from '@/components/section/home/model/home.model';
 import { ContactInfo } from '@/components/section/contact/model/contact.model';
+import { FiMail, FiPhone } from 'react-icons/fi';
 
 export const NAV_CONST: NavigationModel[] = [
     {
@@ -55,14 +56,14 @@ export const SOCIAL_ICONS: HomeModel[] = [
 export const CONTACT_INFO: ContactInfo[] = [
     {
         id: 'c1',
-        icon: <AiOutlineLinkedin />
+        icon: <FiMail />
     },
     {
         id: 'c2',
-        icon: <AiOutlineLinkedin />
+        icon: <FiPhone />
     },
     {
         id: 'c3',
-        icon: <AiOutlineLinkedin />
+        icon: <FaMapMarkerAlt />
     }
 ];
