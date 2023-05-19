@@ -33,7 +33,7 @@ function Contact() {
                                     className='flex py-[12px] lg:flex-row flex-col items-center gap-[14px]'>
                                     <div
                                         onClick={() => action(label)}
-                                        className='flex bg-secondary-main h-[54px] w-[54px] rounded-full items-center justify-center cursor-pointer'>
+                                        className='flex bg-secondary-main h-[54px] w-[54px] shadow-2xl hover:bg-secondary-dark hover:text-text-light transition duration-200 ease-in-out rounded-full items-center justify-center cursor-pointer'>
                                         <span className='text-[18px]'>
                                             {icon}
                                         </span>
