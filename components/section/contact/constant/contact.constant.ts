@@ -18,3 +18,10 @@ export const FORM_FIELD: InputField[] = [
     },
 
 ];
+
+export const INITIAL_FORM = {
+    name: '',
+    email: '',
+    phone: '',
+    message: ''
+};

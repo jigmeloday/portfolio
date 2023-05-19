@@ -5,7 +5,7 @@ import { Formik } from 'formik';
 import Input from '@/components/custom-input/input';
 import Button from '@/components/custom-botton/button';
 import TextArea from '@/components/custom-input/text-area';
-import { FORM_FIELD } from '@/components/section/contact/constant/contact.constant';
+import { FORM_FIELD, INITIAL_FORM } from '@/components/section/contact/constant/contact.constant';
 
 function Contact() {
     return(
@@ -25,7 +25,7 @@ function Contact() {
                 </div>
                 <div className='w-[40%]'>
                     <Formik
-                        initialValues={{ test: '', name: '' }}
+                        initialValues={INITIAL_FORM}
                         onSubmit={(values)=> alert(values)}
                     >
                         {({
@@ -41,7 +41,7 @@ function Contact() {
                                             key={id}
                                             label={label}
                                             name={name}
-                                            value={values?.name}
+                                            value={values?.[name as keyof unknown]}
                                             onChange={handleChange}
                                             className='w-full'
                                         />
@@ -49,7 +49,7 @@ function Contact() {
                                     ))
                                 }
 
-                                <TextArea cols={38} rows={10} onChange={handleChange} value={values.test} label='Test' name='test' />
+                                <TextArea cols={38} rows={10} onChange={handleChange} value={values.message} label='Message' name='message' />
                                 <Button variant='contained' click={handleSubmit} label='Test' className='w-full'/>
                             </div>
 
