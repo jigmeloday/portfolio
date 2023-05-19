@@ -23,15 +23,14 @@ function About() {
                         className='py-[32px] text-justify text-text-main'>
                         {DUMMY}
                     </motion.div>
-                    <motion.div
-                        initial={{ opacity: 0, y: -100 }}
-                        whileInView={{ opacity: 1, y: 0 }}
-                        viewport={{ once: true, amount: 0.8 }}
-                        transition={{ type: 'spring', bounce: 0.1, delay: 0.7 }}
-                        className='flex flex-col  items-center md:flex-row py-8  gap-[12px] justify-center lg:justify-between'>
+                    <div className='flex flex-col  items-center md:flex-row py-8  gap-[12px] justify-center lg:justify-between'>
                         {
                             ABOUT_BOX.map(({ id, icon,  title, description }) => (
-                                <div
+                                <motion.div
+                                    initial={{ opacity: 0, y: -100 }}
+                                    whileInView={{ opacity: 1, y: 0 }}
+                                    viewport={{ once: true, amount: 0.8 }}
+                                    transition={{ type: 'spring', bounce: 0.1, delay: 0.7 }}
                                     key={id}
                                     className='w-[250px] h-[200px] overflow-hidden transition duration-150 group relative rounded-[16px]'
                                 >
@@ -52,10 +51,10 @@ function About() {
                                            </span>
                                         </div>
                                     </div>
-                                </div>
+                                </motion.div>
                             ))
                         }
-                    </motion.div>
+                    </div>
                 </div>
                 </AnimatePresence>
 
