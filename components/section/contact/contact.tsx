@@ -8,6 +8,10 @@ import { FORM_FIELD, INITIAL_FORM } from '@/components/section/contact/constant/
 import { CONTACT_INFO } from '@/components/icons/icons';
 
 function Contact() {
+    const action = (label: string): void => {
+        label.includes('Email') ? window.location.href = 'mailto:jigmenlodey@gmail.com': label.includes('Phone')? window.location.href = 'tel:77455740' :
+            window.open('https://www.google.com/maps/place/Thimphu/@27.4794937,89.6384811,13z/data=!3m1!4b1!4m5!3m4!1s0x39e19419962037b7:0x7c01ffe2660560d1!8m2!3d27.4712216!4d89.6339041');
+    };
     return(
         <CustomContainer>
             <motion.h1
@@ -19,15 +23,17 @@ function Contact() {
             >
                 Contact Me
             </motion.h1>
-            <div className='flex lg:flex-row flex-col pt-8 gap-[6%]'>
-                <div className='lg:w-[50%] w-full'>
+            <div className='flex lg:flex-row flex-col pt-8 gap-[20%]'>
+                <div className='lg:w-[40%] w-full'>
                     <div className='flex lg:flex-col gap-[32px] my-[32px] lg:justify-start justify-center'>
                         {
                             CONTACT_INFO.map(({ id, icon, label, detail }) => (
                                 <div
                                     key={id}
                                     className='flex py-[12px] lg:flex-row flex-col items-center gap-[14px]'>
-                                    <div className='flex bg-secondary-main h-[54px] w-[54px] rounded-full items-center justify-center cursor-pointer'>
+                                    <div
+                                        onClick={() => action(label)}
+                                        className='flex bg-secondary-main h-[54px] w-[54px] rounded-full items-center justify-center cursor-pointer'>
                                         <span className='text-[18px]'>
                                             {icon}
                                         </span>
@@ -43,7 +49,7 @@ function Contact() {
                         }
                     </div>
                 </div>
-                <div className='lg:w-[40%]  w-full'>
+                <div className='w-full'>
                     <Formik
                         initialValues={INITIAL_FORM}
                         onSubmit={(values)=> alert(values)}
@@ -52,7 +58,6 @@ function Contact() {
                               values,
                               handleChange,
                               handleSubmit
-
                           }) => (
                             <div className='w-full'>
                                 {
@@ -70,7 +75,7 @@ function Contact() {
                                 }
 
                                 <TextArea cols={38} rows={10} onChange={handleChange} value={values.message} label='Message' name='message' />
-                                <Button type='button' variant='contained' click={handleSubmit} label='Test' className='w-full'/>
+                                <Button type='button' variant='contained' click={handleSubmit} label='SEND' className='w-full'/>
                             </div>
 
                         )}
