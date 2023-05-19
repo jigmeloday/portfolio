@@ -3,4 +3,5 @@ export interface ButtonProps{
     label: string,
     variant: 'outlined' | 'contained' | 'text',
     className?: string,
+    type: 'submit' | 'reset' | 'button' | undefined
 }

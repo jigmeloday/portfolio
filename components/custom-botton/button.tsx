@@ -1,7 +1,7 @@
 import { ButtonProps } from '@/components/custom-botton/model/button.model';
 
 function Button(props: ButtonProps) {
-    const { click, label, variant, className } = props;
+    const { click, label, variant, className, type } = props;
     return(
         <button
             className={`
@@ -20,6 +20,7 @@ function Button(props: ButtonProps) {
                      ${className}
                     `
             }
+            type={type}
             onClick={click} >{label}</button>
     );
 }

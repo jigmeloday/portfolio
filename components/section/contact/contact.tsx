@@ -50,7 +50,7 @@ function Contact() {
                                 }
 
                                 <TextArea cols={38} rows={10} onChange={handleChange} value={values.message} label='Message' name='message' />
-                                <Button variant='contained' click={handleSubmit} label='Test' className='w-full'/>
+                                <Button type='button' variant='contained' click={handleSubmit} label='Test' className='w-full'/>
                             </div>
 
                         )}
