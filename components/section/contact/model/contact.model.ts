@@ -6,5 +6,7 @@ export interface InputField {
 
 export interface ContactInfo {
     id: string,
-    icon: JSX.Element
+    icon: JSX.Element,
+    label: string,
+    detail: string
 }

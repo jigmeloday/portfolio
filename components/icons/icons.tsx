@@ -56,14 +56,20 @@ export const SOCIAL_ICONS: HomeModel[] = [
 export const CONTACT_INFO: ContactInfo[] = [
     {
         id: 'c1',
-        icon: <FiMail />
+        icon: <FiMail />,
+        label: 'Email',
+        detail: 'jigmenlodey@gmail.com'
     },
     {
         id: 'c2',
-        icon: <FiPhone />
+        icon: <FiPhone />,
+        label: 'Phone',
+        detail: '+975-77455740'
     },
     {
         id: 'c3',
-        icon: <FaMapMarkerAlt />
+        icon: <FaMapMarkerAlt />,
+        label: 'Location',
+        detail: 'Babesa, Thimphu, Bhutan'
     }
 ];

@@ -21,21 +21,23 @@ function Contact() {
             </motion.h1>
             <div className='flex lg:flex-row flex-col pt-8 gap-[6%]'>
                 <div className='lg:w-[50%] w-full'>
-                    <div className='flex lg:flex-col gap-[32px] my-[32px]'>
+                    <div className='flex lg:flex-col gap-[32px] my-[32px] lg:justify-start justify-center'>
                         {
-                            CONTACT_INFO.map(({ id, icon }) => (
+                            CONTACT_INFO.map(({ id, icon, label, detail }) => (
                                 <div
                                     key={id}
-                                    className='flex py-[12px] lg:flex-row flex-col items-center gap-[14px] lg:justify-start justify-center'>
+                                    className='flex py-[12px] lg:flex-row flex-col items-center gap-[14px]'>
                                     <div className='flex bg-secondary-main h-[54px] w-[54px] rounded-full items-center justify-center cursor-pointer'>
                                         <span className='text-[18px]'>
                                             {icon}
                                         </span>
                                     </div>
-                                    <div className='flex flex-col'>
-                                        <span className='font-4 text-text-main'>Email</span>
-                                        <span className='font-2 text-[14px] text-text-main'>jigmelodey@gmail.com</span>
-                                    </div>
+                                   <div className='hidden lg:block'>
+                                       <div className='flex flex-col'>
+                                           <span className='font-4 text-text-main'>{label}</span>
+                                           <span className='font-2 text-[14px] text-text-main'>{detail}</span>
+                                       </div>
+                                   </div>
                                 </div>
                             ))
                         }
