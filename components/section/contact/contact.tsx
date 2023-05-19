@@ -1,11 +1,11 @@
 import CustomContainer from '@/components/custom-container/custom-container';
 import { motion } from 'framer-motion';
 import { Formik } from 'formik';
-
 import Input from '@/components/custom-input/input';
 import Button from '@/components/custom-botton/button';
 import TextArea from '@/components/custom-input/text-area';
 import { FORM_FIELD, INITIAL_FORM } from '@/components/section/contact/constant/contact.constant';
+import { CONTACT_INFO } from '@/components/icons/icons';
 
 function Contact() {
     return(
@@ -19,11 +19,19 @@ function Contact() {
             >
                 Contact Me
             </motion.h1>
-            <div className='flex flex-row py-8 gap-[6%]'>
-                <div className='w-[50%]'>
-                    hello
+            <div className='flex lg:flex-row flex-col py-8 gap-[6%]'>
+                <div className='lg:w-[50%] w-full'>
+                    <div className='flex lg:flex-col gap-[20px] '>
+                        {
+                            CONTACT_INFO.map(({ id, icon }) => (
+                                <div key={id}>
+                                    {icon}
+                                </div>
+                            ))
+                        }
+                    </div>
                 </div>
-                <div className='w-[40%]'>
+                <div className='lg:w-[40%]  w-full'>
                     <Formik
                         initialValues={INITIAL_FORM}
                         onSubmit={(values)=> alert(values)}

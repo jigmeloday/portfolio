@@ -3,3 +3,8 @@ export interface InputField {
     label: string,
     name: string
 }
+
+export interface ContactInfo {
+    id: string,
+    icon: JSX.Element
+}

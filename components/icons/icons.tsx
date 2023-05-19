@@ -3,6 +3,7 @@ import { RxDashboard } from 'react-icons/rx';
 import {  FaCoffee, FaLaptopCode, FaProjectDiagram } from 'react-icons/fa';
 import { AiOutlineMail, AiOutlineLinkedin, AiOutlineInstagram, AiOutlineGithub, AiOutlineTwitter } from 'react-icons/ai';
 import { HomeModel } from '@/components/section/home/model/home.model';
+import { ContactInfo } from '@/components/section/contact/model/contact.model';
 
 export const NAV_CONST: NavigationModel[] = [
     {
@@ -48,5 +49,20 @@ export const SOCIAL_ICONS: HomeModel[] = [
     {
         id: '4',
         name: <AiOutlineTwitter />
+    }
+];
+
+export const CONTACT_INFO: ContactInfo[] = [
+    {
+        id: 'c1',
+        icon: <AiOutlineLinkedin />
+    },
+    {
+        id: 'c2',
+        icon: <AiOutlineLinkedin />
+    },
+    {
+        id: 'c3',
+        icon: <AiOutlineLinkedin />
     }
 ];
