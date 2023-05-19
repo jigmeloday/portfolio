@@ -5,6 +5,7 @@ import { Formik } from 'formik';
 import Input from '@/components/custom-input/input';
 import Button from '@/components/custom-botton/button';
 import TextArea from '@/components/custom-input/text-area';
+import { FORM_FIELD } from '@/components/section/contact/constant/contact.constant';
 
 function Contact() {
     return(
@@ -18,31 +19,43 @@ function Contact() {
             >
                 Contact Me
             </motion.h1>
-            <div className='py-8'>
-                <Formik
-                    initialValues={{ test: '' }}
-                    onSubmit={(values)=> alert(values)}
-                >
-                    {({
-                          values,
-                          handleChange,
-                          handleSubmit
+            <div className='flex flex-row py-8 gap-[6%]'>
+                <div className='w-[50%]'>
+                    hello
+                </div>
+                <div className='w-[40%]'>
+                    <Formik
+                        initialValues={{ test: '', name: '' }}
+                        onSubmit={(values)=> alert(values)}
+                    >
+                        {({
+                              values,
+                              handleChange,
+                              handleSubmit
 
-                      }) => (
-                         <div className='w-full'>
-                             <Input
-                                 label='Test'
-                                 name='test'
-                                 value={values?.test}
-                                 onChange={handleChange}
-                                 width='250px'
-                             />
-                             <TextArea cols={40} rows={10} onChange={handleChange} value={values.test} label='Test' name='test' />
-                             <Button variant='outlined' click={handleSubmit} label='Test'/>
-                         </div>
+                          }) => (
+                            <div className='w-full'>
+                                {
+                                    FORM_FIELD.map(({ id, name, label }) => (
+                                        <Input
+                                            key={id}
+                                            label={label}
+                                            name={name}
+                                            value={values?.name}
+                                            onChange={handleChange}
+                                            className='w-full'
+                                        />
 
-                    )}
-                </Formik>
+                                    ))
+                                }
+
+                                <TextArea cols={38} rows={10} onChange={handleChange} value={values.test} label='Test' name='test' />
+                                <Button variant='contained' click={handleSubmit} label='Test' className='w-full'/>
+                            </div>
+
+                        )}
+                    </Formik>
+                </div>
             </div>
         </CustomContainer>
     );

@@ -6,5 +6,6 @@ export interface InputProps{
     onChange: any
     rows?: number,
     cols?: number,
+    className?: string,
     width?: string;
 }
