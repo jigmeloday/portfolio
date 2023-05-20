@@ -27,7 +27,8 @@ module.exports = {
         text: {
           main: '#c5c5c5',
           light: '#ffffff',
-          dark: '#999999'
+          dark: '#999999',
+          error: '#E74C3C'
         }
       },
       borderColor: {

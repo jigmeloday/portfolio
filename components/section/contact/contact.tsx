@@ -42,7 +42,7 @@ function Contact() {
                             <div className='w-full'>
                                 {
                                     FORM_FIELD.map( ( { id, name, label } ) => (
-                                        <>
+                                        <div className='py-[12px]' key={id}>
                                             <Input
                                                 key={ id }
                                                 label={ label }
@@ -51,13 +51,19 @@ function Contact() {
                                                 value={ values?.[ name as keyof unknown ] }
                                                 onChange={ handleChange }
                                                 className='w-full'
-                                                // helper={  }
                                             />
                                             {
                                                 touched[name as keyof unknown]
-                                                && errors[name as keyof unknown] && <span>{errors[name as keyof unknown]}</span>
+                                                && errors[name as keyof unknown] &&
+                                                <motion.span
+                                                    initial={{ opacity: 0}}
+                                                    animate={{ opacity: 1}}
+                                                    transition={{ duration: 0.5 }}
+                                                    className='font-3 text-[14px] text-text-error'
+                                                >{errors[name as keyof unknown]}
+                                                </motion.span>
                                             }
-                                        </>
+                                        </div>
 
                                     ) )
                                 }
