@@ -5,6 +5,7 @@ export interface InputProps{
     placeholder?: string,
     onChange: any
     rows?: number,
+    onBlur?: any,
     cols?: number,
     className?: string,
     width?: string;

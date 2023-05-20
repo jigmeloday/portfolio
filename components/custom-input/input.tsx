@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { InputProps } from '@/components/custom-input/model/input.model';
 
 function Input(props: InputProps){
-    const { value, name, onChange, label, className } = props;
+    const { value, name, onChange, label, className, onBlur } = props;
     const [isFocus, setFocus] = useState<boolean>();
     return (
         <div className={` ${className} relative ${isFocus || value ? 'border-primary-dark': 'border-primary-main'} transition delay-150 duration-200 ease-in-out h-[48px] border-2 px-2 my-[32px] rounded-[4px]`}>
@@ -15,7 +15,8 @@ function Input(props: InputProps){
                    name={name}
                    onChange={onChange}
                    value={value}
-                   onBlur={() => setFocus(false)}
+                   onBlur={onBlur}
+                   onBlurCapture={() => setFocus(false)}
                    onFocus={() => setFocus(true)} />
         </div>
     );
