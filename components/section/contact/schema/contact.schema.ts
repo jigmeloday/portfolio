@@ -2,11 +2,11 @@ import * as Yup from 'yup';
 
 export const CONTACT_SCHEMA = Yup.object().shape( {
     name: Yup.string()
-        .required('Name Must'),
+        .required('Name is required'),
     email: Yup.string()
-        .required( 'REQUIRED_FIELD' ).email( 'EMAIL_FIELD' ),
+        .required( 'Email is required' ).email( 'Email must be a valid email' ),
     phone: Yup.string()
-        .required('Phone Number Must'),
+        .required('Phone Number is required'),
     message: Yup.string()
-        .required('required')
+        .required('Message is required').min(200, 'Message must contain 200 ')
 } );

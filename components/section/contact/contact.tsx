@@ -67,9 +67,23 @@ function Contact() {
 
                                     ) )
                                 }
-
-                                <TextArea cols={ 38 } rows={ 10 } onChange={ handleChange } value={ values.message }
-                                          label='Message' name='message'/>
+                                <div className='py-[12px]'>
+                                    <TextArea
+                                        onBlur={handleBlur}
+                                        cols={ 38 } rows={ 10 } onChange={ handleChange } value={ values.message }
+                                        label='Message' name='message'/>
+                                    {
+                                        touched.message
+                                        && errors.message &&
+                                        <motion.span
+                                            initial={{ opacity: 0}}
+                                            animate={{ opacity: 1}}
+                                            transition={{ duration: 0.5 }}
+                                            className='font-3 text-[14px] text-text-error'
+                                        >{errors.message}
+                                        </motion.span>
+                                    }
+                                </div>
                                 <Button type='button' variant='contained' click={ handleSubmit } label='SEND'
                                         className='w-full'/>
                             </div>
