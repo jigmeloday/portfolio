@@ -27,7 +27,8 @@ module.exports = {
         text: {
           main: '#c5c5c5',
           light: '#ffffff',
-          dark: '#999999'
+          dark: '#999999',
+          error: '#E74C3C'
         }
       },
       borderColor: {
@@ -46,7 +47,7 @@ module.exports = {
         secondary: {
           main: '#3EB489',
           light: '#8bd2b8',
-          dark: '#1f5a45',
+          dark: '#1f8f64',
         },
         hover: {
           main: 'rgb(89,91,122)'
