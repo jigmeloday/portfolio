@@ -1,4 +1,5 @@
 import { CONTACT_INFO } from '@/components/icons/icons';
+import { motion } from 'framer-motion';
 
 function ContactInfo() {
     const action = ( label: string ): void => {
@@ -9,7 +10,11 @@ function ContactInfo() {
         <div className='flex lg:flex-col gap-[32px] my-[32px] lg:justify-start justify-center'>
             {
                 CONTACT_INFO.map( ( { id, icon, label, detail } ) => (
-                    <div
+                    <motion.div
+                        initial={{ opacity: 0 }}
+                        whileInView={ { opacity: 1} }
+                        viewport={ { once: true, amount: 0.9 } }
+                        transition={ { delay: 0.5 } }
                         key={ id }
                         className='flex py-[12px] lg:flex-row flex-col items-center gap-[14px]'>
                         <div
@@ -25,7 +30,7 @@ function ContactInfo() {
                                 <span className='font-2 text-[14px] text-text-main'>{ detail }</span>
                             </div>
                         </div>
-                    </div>
+                    </motion.div>
                 ) )
             }
         </div>

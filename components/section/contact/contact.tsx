@@ -42,7 +42,12 @@ function Contact() {
                             <div className='w-full'>
                                 {
                                     FORM_FIELD.map( ( { id, name, label } ) => (
-                                        <div className='py-[12px]' key={id}>
+                                        <motion.div
+                                            initial={{ opacity: 0 }}
+                                            whileInView={ { opacity: 1} }
+                                            viewport={ { once: true, amount: 0.9 } }
+                                            transition={ { delay: 0.5 } }
+                                            className='py-[12px]' key={id}>
                                             <Input
                                                 key={ id }
                                                 label={ label }
@@ -63,11 +68,16 @@ function Contact() {
                                                 >{errors[name as keyof unknown]}
                                                 </motion.span>
                                             }
-                                        </div>
+                                        </motion.div>
 
                                     ) )
                                 }
-                                <div className='py-[12px]'>
+                                <motion.div
+                                    initial={{ opacity: 0 }}
+                                    whileInView={ { opacity: 1} }
+                                    viewport={ { once: true, amount: 0.9 } }
+                                    transition={ { delay: 0.5 } }
+                                    className='py-[12px]'>
                                     <TextArea
                                         onBlur={handleBlur}
                                         cols={ 38 } rows={ 10 } onChange={ handleChange } value={ values.message }
@@ -86,11 +96,16 @@ function Contact() {
                                             </motion.span>
                                         }
                                     </div>
-                                </div>
-                                <div className='py-[12px]'>
+                                </motion.div>
+                                <motion.div
+                                    initial={{ opacity: 0 }}
+                                    whileInView={ { opacity: 1} }
+                                    viewport={ { once: true, amount: 0.9 } }
+                                    transition={ { delay: 0.5, duration: 0.5 } }
+                                    className='py-[12px]'>
                                     <Button type='button' variant='contained' click={ handleSubmit } label='SEND'
                                             className='w-full'/>
-                                </div>
+                                </motion.div>
                             </div>
 
                         ) }
