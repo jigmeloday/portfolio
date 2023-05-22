@@ -59,7 +59,7 @@ function Contact() {
                                                     initial={{ opacity: 0}}
                                                     animate={{ opacity: 1}}
                                                     transition={{ duration: 0.5 }}
-                                                    className='font-3 text-[14px] text-text-error'
+                                                    className='font-3 absolute text-[14px] text-text-error'
                                                 >{errors[name as keyof unknown]}
                                                 </motion.span>
                                             }
@@ -72,20 +72,25 @@ function Contact() {
                                         onBlur={handleBlur}
                                         cols={ 38 } rows={ 10 } onChange={ handleChange } value={ values.message }
                                         label='Message' name='message'/>
-                                    {
-                                        touched.message
-                                        && errors.message &&
-                                        <motion.span
-                                            initial={{ opacity: 0}}
-                                            animate={{ opacity: 1}}
-                                            transition={{ duration: 0.5 }}
-                                            className='font-3 text-[14px] text-text-error'
-                                        >{errors.message}
-                                        </motion.span>
-                                    }
+                                    <div className='relative pb-[12px] h-fit'>
+                                        {
+                                            touched.message
+                                            && errors.message &&
+                                            <motion.span
+                                                initial={{ opacity: 0}}
+                                                animate={{ opacity: 1}}
+                                                exit={{ opacity: 0 }}
+                                                transition={{ duration: 0.5 }}
+                                                className='font-3 absolute text-[14px] text-text-error'
+                                            >{errors.message}
+                                            </motion.span>
+                                        }
+                                    </div>
                                 </div>
-                                <Button type='button' variant='contained' click={ handleSubmit } label='SEND'
-                                        className='w-full'/>
+                                <div className='py-[12px]'>
+                                    <Button type='button' variant='contained' click={ handleSubmit } label='SEND'
+                                            className='w-full'/>
+                                </div>
                             </div>
 
                         ) }
