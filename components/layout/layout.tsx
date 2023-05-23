@@ -17,7 +17,7 @@ function Layout(props: { children: ReactNode }) {
 
                   <button className='lg:hidden text-white' onClick={() => dispatch(setNavState(!isOpen))}>press </button>
                   {props.children}
-                  <div>
+                  <div className='w-full bg-primary-main'>
                       <Footer />
                   </div>
               </div>
