@@ -1,6 +1,6 @@
 function Footer() {
     return(
-        <div className='py-[22px]' >
+        <div className='py-[22px] font-3 text-[14px] text-center' >
             <div className='flex justify-center'>
                 <div className=' w-[86%]'>
                     Footer
