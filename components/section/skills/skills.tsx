@@ -2,11 +2,6 @@ import { motion } from 'framer-motion';
 
 function Skills() {
     return(
-        // <div className='justify-center flex lg:px-[150px] py-[6%]'>
-        //    <div className='col'>
-
-        //    </div>
-        // </div>
         <div className='min-h-screen justify-center flex lg:px-[150px] py-[6%] '>
             <div className='w-[80%] justify-start'>
                 <motion.h1
