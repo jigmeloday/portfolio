@@ -16,8 +16,19 @@ function Skills() {
                 <span>
                     I possess a diverse range of skills that I regularly utilize, and I have highlighted some of them below. If you would like to learn more about my capabilities, I encourage you to refer to my CV, which provides a comprehensive overview of my experience and expertise, including skills that may not be mentioned here. I am proud to say that I have successfully applied these skills in over five projects as of 2022.
                 </span>
-                <div>
-
+                <div className='flex flex-row py-[24px] gap-[28px]'>
+                    <div className='flex flex-col py-[14px]'>
+                        <span>Frontend</span>
+                        <div className='py-[18px]'>
+                            <span>TypeScript</span>
+                        </div>
+                    </div>
+                    <div className='flex flex-col py-[14px]'>
+                        <span>Backend</span>
+                        <div className='py-[18px]'>
+                            <span>TypeScript</span>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
