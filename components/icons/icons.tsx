@@ -1,6 +1,7 @@
 import { NavigationModel } from '@/components/layout/model/navigation.model';
 import { RxDashboard } from 'react-icons/rx';
-import { FaCoffee, FaLaptopCode, FaMapMarkerAlt, FaProjectDiagram, FaCode } from 'react-icons/fa';
+import { BiCodeCurly } from 'react-icons/bi';
+import { FaCoffee, FaDatabase, FaLaptopCode, FaMapMarkerAlt, FaProjectDiagram, FaCode } from 'react-icons/fa';
 import { AiOutlineMail, AiOutlineLinkedin, AiOutlineInstagram, AiOutlineGithub, AiOutlineTwitter } from 'react-icons/ai';
 import { HomeModel } from '@/components/section/home/model/home.model';
 import { ContactInfo } from '@/components/section/contact/model/contact.model';
@@ -77,11 +78,126 @@ export const CONTACT_INFO: ContactInfo[] = [
 
 export const SKILLS_CONSTANT: SkillModel[] = [
     {
+        id: 's1',
         title: 'User Interface',
         icon: <FaCode />,
         list: [
             {
-                name: 'string'
+                id: 'l1',
+                name: 'HTML'
+            },
+            {
+                id: 'l2',
+                name: 'CSS'
+            },
+            {
+                id: 'l2',
+                name: 'SCSS'
+            },
+            {
+                id: 'l2',
+                name: 'Tailwind'
+            },
+            {
+                id: 'l2',
+                name: 'StyleComponent'
+            },
+            {
+                id: 'l2',
+                name: 'MUI'
+            }
+        ]
+    },
+    {
+        id: 's1',
+        title: 'Fontend',
+        icon: <BiCodeCurly />,
+        list: [
+            {
+                id: 'l1',
+                name: 'Javascript'
+            },
+            {
+                id: 'l2',
+                name: 'TypeScript'
+            },
+            {
+                id: 'l2',
+                name: 'React'
+            },
+            {
+                id: 'l2',
+                name: 'Angular'
+            },
+            {
+                id: 'l2',
+                name: 'React Native'
+            },
+            {
+                id: 'l2',
+                name: 'Next.js'
+            },
+            {
+                id: 'l2',
+                name: 'Node.js'
+            }
+        ]
+    },
+    {
+        id: 's1',
+        title: 'Backend',
+        icon: <FaDatabase />,
+        list: [
+            {
+                id: 'l1',
+                name: 'Mongo'
+            },
+            {
+                id: 'l2',
+                name: 'Postgres'
+            },
+            {
+                id: 'l2',
+                name: 'Rails'
+            },
+            {
+                id: 'l2',
+                name: 'Go'
+            },
+            {
+                id: 'l2',
+                name: 'Spring'
+            },
+            {
+                id: 'l2',
+                name: 'Express'
+            },
+            {
+                id: 'l2',
+                name: 'Firebase'
+            }
+        ]
+    },
+    {
+        id: 's1',
+        title: 'Others',
+        icon: <FaDatabase />,
+        list: [
+            {
+                id: 'l1',
+                name: 'Figma'
+            },
+            {
+                id: 'l2',
+                name: 'Docker'
+            },
+            {
+                id: 'l2',
+                name: 'Github'
+            },
+            {
+                id: 'l2',
+                name: 'Bitbucket'
             }
         ]
     }
