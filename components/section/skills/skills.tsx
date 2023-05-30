@@ -43,7 +43,9 @@ function Skills() {
                                         {
                                             list.map(({ name, id }) => (
                                                 <div className='flex items-center gap-[6px]' key={id}>
-                                                    <MdKeyboardArrowRight />
+                                                    <span className='text-primary-main'>
+                                                        <MdKeyboardArrowRight />
+                                                    </span>
                                                     <span className='font-3 text-[12px]'>{name}</span>
                                                 </div>
                                             ))

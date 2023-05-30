@@ -7,6 +7,7 @@ import { HomeModel } from '@/components/section/home/model/home.model';
 import { ContactInfo } from '@/components/section/contact/model/contact.model';
 import { FiMail, FiPhone } from 'react-icons/fi';
 import { SkillModel } from '@/components/section/skills/model/skill.model';
+import { TbTools } from 'react-icons/tb';
 
 export const NAV_CONST: NavigationModel[] = [
     {
@@ -180,8 +181,8 @@ export const SKILLS_CONSTANT: SkillModel[] = [
     },
     {
         id: 's1',
-        title: 'Others',
-        icon: <FaDatabase />,
+        title: 'Other',
+        icon: <TbTools />,
         list: [
             {
                 id: 'l1',
