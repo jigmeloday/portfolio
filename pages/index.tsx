@@ -15,10 +15,10 @@ export default function Home() {
                 <About />
             </section>
             <section>
-                <Skills />
+                <Exp />
             </section>
             <section>
-                <Exp />
+                <Skills />
             </section>
             <section>
                 <Projects />
