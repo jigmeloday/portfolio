@@ -1,10 +1,11 @@
 import { NavigationModel } from '@/components/layout/model/navigation.model';
 import { RxDashboard } from 'react-icons/rx';
-import { FaCoffee, FaLaptopCode, FaMapMarkerAlt, FaProjectDiagram } from 'react-icons/fa';
+import { FaCoffee, FaLaptopCode, FaMapMarkerAlt, FaProjectDiagram, FaCode } from 'react-icons/fa';
 import { AiOutlineMail, AiOutlineLinkedin, AiOutlineInstagram, AiOutlineGithub, AiOutlineTwitter } from 'react-icons/ai';
 import { HomeModel } from '@/components/section/home/model/home.model';
 import { ContactInfo } from '@/components/section/contact/model/contact.model';
 import { FiMail, FiPhone } from 'react-icons/fi';
+import { SkillModel } from '@/components/section/skills/model/skill.model';
 
 export const NAV_CONST: NavigationModel[] = [
     {
@@ -71,5 +72,17 @@ export const CONTACT_INFO: ContactInfo[] = [
         icon: <FaMapMarkerAlt />,
         label: 'Location',
         detail: 'Babesa, Thimphu, Bhutan'
+    }
+];
+
+export const SKILLS_CONSTANT: SkillModel[] = [
+    {
+        title: 'User Interface',
+        icon: <FaCode />,
+        list: [
+            {
+                name: 'string'
+            }
+        ]
     }
 ];
