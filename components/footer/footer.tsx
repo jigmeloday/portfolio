@@ -1,9 +1,9 @@
 function Footer() {
     return(
-        <div className='w-full bg-primary-main' >
+        <div className='py-[22px] font-3 text-[14px] text-center' >
             <div className='flex justify-center'>
-                <div className=' w-[86%]'>
-                    Footer
+                <div className='w-[86%] text-[12px] font-2'>
+                    ©Copyright ©2023 All rights reserved
                 </div>
             </div>
         </div>

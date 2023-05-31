@@ -3,6 +3,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { selectCurrentNav, setNavState } from '@/services/state/shared/shared.slice';
 import Drawer from '@/components/layout/navigation/drawer';
 import SideNav from '@/components/layout/navigation/side-nav';
+import Footer from '@/components/footer/footer';
 // import Footer from '@/components/footer/footer';
 
 function Layout(props: { children: ReactNode }) {
@@ -16,9 +17,9 @@ function Layout(props: { children: ReactNode }) {
 
                   <button className='lg:hidden text-white' onClick={() => dispatch(setNavState(!isOpen))}>press </button>
                   {props.children}
-                  {/*<div>*/}
-                  {/*    <Footer />*/}
-                  {/*</div>*/}
+                  <div className='w-full'>
+                      <Footer />
+                  </div>
               </div>
 
           </div>
