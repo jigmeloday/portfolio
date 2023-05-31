@@ -20,34 +20,37 @@ module.exports = {
       },
       colors: {
         primary: {
-          main: '#3EB489',
-          light: '#8bd2b8',
-          dark: '#1f5a45',
+          main: '#1A8E9C',
+          light: '#FCF6F5FF',
+          dark: 'rgba(26,142,156,0.48)',
+          contrastText: 'rgba(38,38,38,0.82)'
         },
         text: {
-          main: '#c5c5c5',
-          light: '#ffffff',
-          dark: '#999999',
+          dark: 'rgba(0, 0, 0, 0.87)' ,
+          contrastText: 'rgba(0, 0, 0, 0.6)',
           error: '#E74C3C'
         }
       },
       borderColor: {
         primary: {
-          main: '#3EB489',
-          light: '#8bd2b8',
-          dark: 'rgba(31,90,69,0.4)',
-        }
+          main: '#1A8E9C',
+          light: '#FCF6F5FF',
+          dark: 'rgba(26,142,156,0.48)',
+          contrastText: 'rgba(38,38,38,0.82)'
+        },
       },
       backgroundColor: {
         primary: {
-          main: '#2e3047',
-          light: '#212121',
-          dark: '#2e3047'
+          main: '#1A8E9C',
+          light: '#FCF6F5FF',
+          dark: 'rgba(26,142,156,0.48)',
+          contrastText: 'rgba(38,38,38,0.82)'
         },
         secondary: {
-          main: '#3EB489',
-          light: '#8bd2b8',
-          dark: '#1f8f64',
+          main:  '#FFFFFF',
+          light: 'rgba(255,255,255,0.68)',
+          dark: 'rgba(0, 0, 0, 0.87)' ,
+          contrastText: 'rgba(0, 0, 0, 0.6)',
         },
         hover: {
           main: 'rgb(89,91,122)'
