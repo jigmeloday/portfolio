@@ -1,10 +1,10 @@
 export function Weather() {
     const time = new Date().getHours();
-    if ( time < 5 && time > 9 ) {
+    if ( parseInt(String( time )) < 5 && parseInt(String( time )) > 9 ) {
         return 'morning';
-    } else if ( time > 9 && time < 16 ) {
+    } else if ( parseInt(String( time )) > 9 && parseInt(String( time )) < 16 ) {
         return 'afternoon';
-    } else if ( time > 16 && time < 18 ) {
+    } else if ( parseInt(String( time )) > 16 && parseInt(String( time )) < 18 ) {
         return 'evening';
     } else {
         return 'night';
