@@ -1,57 +1,17 @@
-// import { SOCIAL_ICONS } from '@/components/icons/icons';
 import { motion } from 'framer-motion';
-// import img  from '../../../public/images/profile.png';
-// import Image from 'next/image';
+import Image from 'next/image';
 import Button from '@/components/custom-botton/button';
 import { MdKeyboardArrowRight } from 'react-icons/md';
+import img  from '../../../public/images/landing-svg.svg';
+import { Weather } from '@/components/section/home/helper';
+import { BsFillMoonFill, BsFillSunFill } from 'react-icons/bs';
+import { AiFillStar } from 'react-icons/ai';
+import { STARS } from '@/components/section/home/constant/stars.constant';
 
 function Landing(){
+    const getTime = Weather();
     return(
-
-            // <div className='flex flex-col justify-center items-center w-screen min-h-screen '>
-            //     <AnimatePresence>
-            //     <motion.div
-            //         initial={{ y:-100  }}
-            //         animate={{ y:0 }}
-            //         transition={{ duration: 0.9 }}
-            //         className='flex items-center justify-center bg-primary-dark shadow-2xl relative rounded-full w-[200px] h-[200px] overflow-hidden' >
-            //         <Image src={img} alt='profile' height={240}  className='rounded-full'  />
-            //     </motion.div>
-            //
-            //     <div className='pt-[38px] text-center'>
-            //         <motion.h1
-            //             initial={{ opacity: 0 }}
-            //             animate={{ opacity: 1 }}
-            //             transition={{ duration: 1, delay: 0.5 }}
-            //             className='text-[40px] font-8'> Jigme Lodey </motion.h1>
-            //         <motion.span
-            //             initial={{ opacity: 0 }}
-            //             animate={{ opacity: 1 }}
-            //             transition={{ duration: 1.2, delay: 0.7 }}
-            //             className='pt-[8px] text-[24px]'>
-            //             I am Software
-            //             <span className='text-primary-main pl-[6px]'>Developer</span>
-            //         </motion.span>
-            //         <div className='py-[30px] flex gap-[18px] justify-center'>
-            //             {
-            //                 SOCIAL_ICONS.map(({ id, name }) => (
-            //                     <motion.div
-            //                         key={id}
-            //                         initial={{ opacity: 0 }}
-            //                         animate={{ opacity: 1 }}
-            //                         transition={{ duration: 1.4, delay: 0.9 }}
-            //                         className='text-[34px] cursor-pointer shadow-2xl text-primary-main hover:scale-150 translation duration-300 ' >
-            //                         {name}
-            //                     </motion.div>
-            //                 ))
-            //             }
-            //         </div>
-            //
-            //     </div>
-            //     </AnimatePresence>
-            //
-            // </div>
-        <div className='flex min-h-screen justify-end'>
+        <div className='flex min-h-screen justify-end px-[42px]'>
             <div className='flex w-[76%]'>
                <div className='flex flex-col justify-center px-[22px] w-[40%]'>
                    <motion.span
@@ -91,16 +51,47 @@ function Landing(){
                        <span className='animate-pulse'>_</span>
                    </motion.div>
                    <motion.div
-                       initial={{ y: 300, opacity: 0 }}
+                       initial={{ y: 100, opacity: 0 }}
                        whileInView={{ y: 0, opacity: 1 }}
                        transition={{ delay: 0.9, type:'spring', bounce: 0.5 }}
-                       viewport={ { once: true, amount: 0.3, } }
+                       viewport={ { once: false, amount: 0.3, } }
                    >
                        <Button label='Hire Me' type='button' variant='contained' click={() => alert('hello')} />
                    </motion.div>
                </div>
-                <div>
-                    Hello
+                <div className='flex items-center justify-center w-full pr-[24px] relative'>
+                    <motion.div
+                        initial={{ x:-500, opacity:0 }}
+                        whileInView={{ x: 0, opacity: 1 }}
+                        transition={{ delay: 0.9, duration: 5.9 }}
+                        viewport={ { once: true, amount: 0.3, } }
+                        className='flex items-center justify-center  relative  w-[300px] h-[300px] overflow-hidden'>
+                        <Image src={img} alt='profile' height={540}  className='rounded-full'  />
+                    </motion.div>
+                    {
+                        getTime === 'night' && STARS.map(({ classes, duration, delay}) => (
+                            <motion.div
+                                initial={{ opacity: 0 }}
+                                whileInView={{ opacity: 1 }}
+                                transition={{ delay: delay, duration: duration }}
+                                viewport={ { once: true, amount: 0.3, } }
+                                key={ classes}
+
+                                className={`${classes} animate-pulse`}>
+                                <AiFillStar />
+                            </motion.div>
+                        ))
+                    }
+                    <motion.div
+                        initial={{ scale:0, opacity:0.5 }}
+                        whileInView={{ scale: 1, opacity: 1 }}
+                        transition={{ delay: 0.9, duration: 5.9 }}
+                        viewport={ { once: true, amount: 0.3, } }
+                        className='fixed right-[32%] top-[28%]'>
+                        {
+                            getTime === 'night' ? <BsFillMoonFill className='text-text-moon text-[32px]' /> : <BsFillSunFill className='text-text-sun text-[42px]' />
+                        }
+                    </motion.div>
                 </div>
             </div>
         </div>

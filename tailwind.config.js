@@ -29,6 +29,8 @@ module.exports = {
           dark: 'rgba(0, 0, 0, 0.87)' ,
           contrastText: 'rgba(0, 0, 0, 0.6)',
           light: '#FCF6F5FF',
+          moon: 'rgba(157,178,191,0.44)',
+          sun: '#FDB813',
           error: '#E74C3C'
         }
       },
