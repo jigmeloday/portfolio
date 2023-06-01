@@ -5,7 +5,7 @@ import img from '@/public/images/profile.png';
 
 function SideNav() {
     return(
-        <div className='lg:block shadow-2xl w-[240px]  fixed hidden top-[10%] left-[6%] overflow-hidden rounded-[12px] px-2 py-6 '>
+        <div className='lg:block shadow-2xl w-[240px] hidden overflow-hidden rounded-[12px] px-2 py-6 '>
             <div className='flex flex-col items-center'>
                 <motion.div
                     initial={{ y:-100  }}
