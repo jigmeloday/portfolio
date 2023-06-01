@@ -3,6 +3,7 @@
 // import img  from '../../../public/images/profile.png';
 // import Image from 'next/image';
 import Button from '@/components/custom-botton/button';
+import { MdKeyboardArrowRight } from 'react-icons/md';
 
 function Landing(){
     return(
@@ -53,12 +54,17 @@ function Landing(){
         <div className='flex min-h-screen justify-end'>
             <div className='flex w-[76%]'>
                <div className='flex flex-col justify-center px-[22px] w-[40%]'>
-                   <span>
+                   <span className='pt-[6px] pb-[4px] font-5'>
                        HI, THERE! 👋 I AM
                    </span>
-                   <span> Jigme Lodey</span>
-                   <span> I’m a software engineer specializing in building (and occasionally designing) exceptional digital experiences. </span>
-                   <span> Software Developer </span>
+                   <span className='pb-[4px] font-6 text-[32px] text-primary-main'> Jigme Lodey</span>
+                   <span className='py-[8px] font-3 text-[14px]'> I’m a software engineer specializing in building (and occasionally designing) exceptional digital experiences. </span>
+                   <div className='flex pt-[6px] pb-[18px] items-center'>
+                       <span className='text-center text-[24px]'>
+                           <MdKeyboardArrowRight />
+                       </span>
+                       <span className='text-primary-main'> Software Developer </span>
+                   </div>
                    <Button label='Hire Me' type='button' variant='contained' click={() => alert('hello')} />
                </div>
                 <div>
