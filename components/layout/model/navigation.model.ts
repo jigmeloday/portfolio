@@ -1,5 +1,6 @@
 export interface NavigationModel {
     id: string,
     icon: any,
-    link: string
+    link: string,
+    label: string
 }

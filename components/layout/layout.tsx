@@ -12,7 +12,9 @@ function Layout(props: { children: ReactNode }) {
     return(
           <div className='flex'>
               <Drawer />
-              <SideNav />
+              <div className="flex items-center min-h-screen fixed left-[6%]">
+                  <SideNav />
+              </div>
               <div>
 
                   <button className='lg:hidden text-white' onClick={() => dispatch(setNavState(!isOpen))}>press </button>
