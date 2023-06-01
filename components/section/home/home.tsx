@@ -1,5 +1,5 @@
 // import { SOCIAL_ICONS } from '@/components/icons/icons';
-// import { AnimatePresence, motion } from 'framer-motion';
+import { motion } from 'framer-motion';
 // import img  from '../../../public/images/profile.png';
 // import Image from 'next/image';
 import Button from '@/components/custom-botton/button';
@@ -54,18 +54,50 @@ function Landing(){
         <div className='flex min-h-screen justify-end'>
             <div className='flex w-[76%]'>
                <div className='flex flex-col justify-center px-[22px] w-[40%]'>
-                   <span className='pt-[6px] pb-[4px] font-5'>
+                   <motion.span
+                       initial={{ opacity: 0 }}
+                       whileInView={{ opacity: 1 }}
+                       transition={{ delay: 0.3, duration: 0.9 }}
+                       viewport={ { once: true, amount: 0.9 } }
+                       className='pt-[6px] pb-[4px] font-5'>
                        HI, THERE! 👋 I AM
-                   </span>
-                   <span className='pb-[4px] font-6 text-[32px] text-primary-main'> Jigme Lodey</span>
-                   <span className='py-[8px] font-3 text-[14px]'> I’m a software engineer specializing in building (and occasionally designing) exceptional digital experiences. </span>
-                   <div className='flex pt-[6px] pb-[18px] items-center'>
+                   </motion.span>
+                   <motion.span
+                       initial={{ opacity: 0 }}
+                       whileInView={{ opacity: 1 }}
+                       transition={{ delay: 0.5, duration: 0.9 }}
+                       viewport={ { once: true, amount: 0.9 } }
+                       className='pb-[4px] font-6 text-[32px] text-primary-main'>
+                       Jigme Lodey
+                   </motion.span>
+                   <motion.span
+                       initial={{ opacity: 0 }}
+                       whileInView={{ opacity: 1 }}
+                       transition={{ delay: 0.7, duration: 0.9 }}
+                       viewport={ { once: true, amount: 0.9 } }
+                       className='py-[8px] font-3 text-[14px]'>
+                       I’m a software engineer specializing in building (and occasionally designing) exceptional digital experiences.
+                   </motion.span>
+                   <motion.div
+                       initial={{ opacity: 0 }}
+                       whileInView={{ opacity: 1 }}
+                       transition={{ delay: 0.9, duration: 0.9 }}
+                       viewport={ { once: true, amount: 0.9 } }
+                       className='flex pt-[6px] pb-[18px] items-center'>
                        <span className='text-center text-[24px]'>
                            <MdKeyboardArrowRight />
                        </span>
                        <span className='text-primary-main'> Software Developer </span>
-                   </div>
-                   <Button label='Hire Me' type='button' variant='contained' click={() => alert('hello')} />
+                       <span className='animate-pulse'>_</span>
+                   </motion.div>
+                   <motion.div
+                       initial={{ y: 300, opacity: 0 }}
+                       whileInView={{ y: 0, opacity: 1 }}
+                       transition={{ delay: 0.9, type:'spring', bounce: 0.5 }}
+                       viewport={ { once: true, amount: 0.3, } }
+                   >
+                       <Button label='Hire Me' type='button' variant='contained' click={() => alert('hello')} />
+                   </motion.div>
                </div>
                 <div>
                     Hello
