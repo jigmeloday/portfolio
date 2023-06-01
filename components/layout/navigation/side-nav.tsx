@@ -5,12 +5,16 @@ import img from '@/public/images/profile2.svg';
 
 function SideNav() {
     return(
-        <div className='lg:block shadow-2xl w-[240px] hidden overflow-hidden rounded-[12px] px-2 py-6 '>
+        <motion.div
+            initial={{ scale: 0 }}
+            animate={{ scale: 1 }}
+            transition={{ duration: 0.9 }}
+            className='lg:block shadow-2xl w-[240px] hidden overflow-hidden rounded-[12px] px-2 py-6 '>
             <div className='flex flex-col items-center pt-[22px]'>
                 <motion.div
-                    initial={{ y:-100  }}
-                    animate={{ y:0 }}
-                    transition={{ duration: 0.9 }}
+                    initial={{ y:-100, opacity: 0  }}
+                    animate={{ y:0, opacity: 1 }}
+                    transition={{ delay: 0.5, duration: 0.9 }}
                     className='flex items-center justify-center bg-secondary-light shadow-2xl relative rounded-full w-[150px] h-[150px] overflow-hidden' >
                     <Image src={img} alt='profile' height={240}  className='rounded-full'  />
                 </motion.div>
@@ -22,7 +26,7 @@ function SideNav() {
                                     key={item}
                                     initial={{ opacity: 0 }}
                                     animate={{ opacity: 1 }}
-                                    transition={{ duration: 1, delay: 0.5 }}
+                                    transition={{ duration: 0.9, delay: 0.6 }}
                                     className='text-[24px] text-center font-8 hover:scale-150 transition delay-1500 duration-500 ease-in-out '>
                                     {
                                         item === '_'? <span className='px-[4px]'/> : item
@@ -34,7 +38,7 @@ function SideNav() {
                     <motion.span
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}
-                        transition={{ duration: 1.2, delay: 0.7 }}
+                        transition={{ duration: 0.9, delay: 0.7 }}
                         className='pt-[8px] text-center text-[12px]'>
                         FULL STACK DEVELOPER IN
                         <span className='text-primary-main pl-[6px] cursor-pointer hover:text-primary-dark transition delay-1500 duration-500 ease-in-out'>BHUTAN</span>
@@ -82,7 +86,7 @@ function SideNav() {
                 className='flex items-end justify-center font-2 text-[12px] pt-[28px]'>
                 ©Copyright ©2023 All rights reserved
             </motion.div>
-        </div>
+        </motion.div>
     );
 }
 
