@@ -5,7 +5,7 @@ import img from '@/public/images/profile.png';
 
 function SideNav() {
     return(
-        <div className='lg:block shadow-2xl w-[240px]  fixed hidden top-[10%] left-[6%] overflow-hidden rounded-[12px] px-2 py-6 text-primary-main'>
+        <div className='lg:block shadow-2xl w-[240px]  fixed hidden top-[10%] left-[6%] overflow-hidden rounded-[12px] px-2 py-6 '>
             <div className='flex flex-col items-center'>
                 <motion.div
                     initial={{ y:-100  }}
@@ -14,7 +14,7 @@ function SideNav() {
                     className='flex items-center justify-center bg-primary-dark shadow-2xl relative rounded-full w-[150px] h-[150px] overflow-hidden' >
                     <Image src={img} alt='profile' height={240}  className='rounded-full'  />
                 </motion.div>
-                <div className='pt-[24px]'>
+                <div className='pt-[18px]'>
                     <motion.h1
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}
@@ -24,9 +24,9 @@ function SideNav() {
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}
                         transition={{ duration: 1.2, delay: 0.7 }}
-                        className='pt-[8px] text-center text-[14px]'>
-                        I am Software
-                        <span className='text-primary-main pl-[6px]'>Developer</span>
+                        className='pt-[8px] text-center text-[12px]'>
+                        FULL STACK DEVELOPER IN
+                        <span className='text-primary-main pl-[6px]'>BHUTAN</span>
                     </motion.span>
                 </div>
             </div>
@@ -34,7 +34,7 @@ function SideNav() {
                 initial={{ opacity: 0, scale: 0.5 }}
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 0.5 }}
-                className='overflow-hidden  px-2 py-4 text-primary-main'>
+                className='overflow-hidden  px-2 py-4'>
                 {
                     NAV_CONST.map(({ label, id}) => (
                         <motion.div
@@ -43,14 +43,14 @@ function SideNav() {
                             animate={{ y: 0, opacity: 1 }}
                             transition={{ delay: 0.5, duration: 1 }}
                             className='flex justify-center px-[4px] py-[6px] '>
-                            <div className='text-[14px] font-6 items-center cursor-pointer hover:text-primary-light hover:scale-150 transition delay-1500 duration-500 ease-in-out'>
+                            <div className='text-[14px] font-6 items-center cursor-pointer hover:text-primary-main hover:scale-150 transition delay-1500 duration-500 ease-in-out'>
                                 {label}
                             </div>
                         </motion.div>
                     ))
                 }
             </motion.div>
-            <div className='flex w-full justify-center py-[14px]'>
+            <div className='flex w-full justify-center py-[14px] gap-[8px]'>
                 {
                     SOCIAL_ICONS.map(({ id, name }) =>(
                         <motion.div
@@ -58,14 +58,14 @@ function SideNav() {
                             initial={{ opacity: 0 }}
                             animate={{ opacity: 1 }}
                             transition={{ duration: 1.4, delay: 0.9 }}
-                            className='text-[20px] text-center cursor-pointer shadow-2xl text-primary-main hover:scale-150 translation duration-300 ' >
+                            className='text-[24px] text-center cursor-pointer shadow-2xl text-primary-main hover:scale-150 translation duration-300 ' >
                             {name}
                         </motion.div>
                     ))
                 }
             </div>
-            <div className='flex items-end justify-center'>
-                Footer
+            <div className='flex items-end justify-center font-2 text-[12px] pt-[28px]'>
+                ©Copyright ©2023 All rights reserved
             </div>
         </div>
     );
