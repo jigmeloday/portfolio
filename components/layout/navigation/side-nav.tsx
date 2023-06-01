@@ -53,8 +53,8 @@ function SideNav() {
                             initial={{ y: -200, opacity: 0 }}
                             animate={{ y: 0, opacity: 1 }}
                             transition={{ delay: 0.5, duration: 1 }}
-                            className='flex justify-center px-[4px] py-[4px] '>
-                            <div className='text-[14px] font-6 items-center cursor-pointer hover:text-primary-main hover:scale-125 transition delay-1500 duration-500 ease-in-out'>
+                            className='flex justify-center px-[4px] py-[5px] '>
+                            <div className='text-[12px] font-5 items-center cursor-pointer hover:text-primary-main hover:scale-125 transition delay-1500 duration-500 ease-in-out'>
                                 {label}
                             </div>
                         </motion.div>
