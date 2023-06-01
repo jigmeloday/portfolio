@@ -11,7 +11,7 @@ function SideNav() {
                     initial={{ y:-100  }}
                     animate={{ y:0 }}
                     transition={{ duration: 0.9 }}
-                    className='flex items-center justify-center bg-primary-dark shadow-2xl relative rounded-full w-[150px] h-[150px] overflow-hidden' >
+                    className='flex items-center justify-center bg-secondary-light shadow-2xl relative rounded-full w-[150px] h-[150px] overflow-hidden' >
                     <Image src={img} alt='profile' height={240}  className='rounded-full'  />
                 </motion.div>
                 <div className='pt-[18px]'>
