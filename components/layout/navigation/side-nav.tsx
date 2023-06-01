@@ -45,7 +45,7 @@ function SideNav() {
                 initial={{ opacity: 0, scale: 0.5 }}
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 0.5 }}
-                className='overflow-hidden  px-2 py-4'>
+                className='overflow-hidden  px-2 py-6'>
                 {
                     NAV_CONST.map(({ label, id}) => (
                         <motion.div
@@ -53,8 +53,8 @@ function SideNav() {
                             initial={{ y: -200, opacity: 0 }}
                             animate={{ y: 0, opacity: 1 }}
                             transition={{ delay: 0.5, duration: 1 }}
-                            className='flex justify-center px-[4px] py-[6px] '>
-                            <div className='text-[14px] font-6 items-center cursor-pointer hover:text-primary-main hover:scale-150 transition delay-1500 duration-500 ease-in-out'>
+                            className='flex justify-center px-[4px] py-[4px] '>
+                            <div className='text-[14px] font-6 items-center cursor-pointer hover:text-primary-main hover:scale-125 transition delay-1500 duration-500 ease-in-out'>
                                 {label}
                             </div>
                         </motion.div>
