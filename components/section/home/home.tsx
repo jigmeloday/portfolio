@@ -77,7 +77,7 @@ function Landing(){
                                 viewport={ { once: true, amount: 0.3, } }
                                 key={ classes}
 
-                                className={`${classes} animate-pulse`}>
+                                className={`${classes} animate-pulse absolute`}>
                                 <AiFillStar />
                             </motion.div>
                         ))
@@ -87,7 +87,7 @@ function Landing(){
                         whileInView={{ scale: 1, opacity: 1 }}
                         transition={{ delay: 0.9, duration: 5.9 }}
                         viewport={ { once: true, amount: 0.3, } }
-                        className='fixed right-[32%] top-[28%]'>
+                        className='absolute right-[60%] top-[28%]'>
                         {
                             getTime === 'night' ? <BsFillMoonFill className='text-text-moon text-[32px]' /> : <BsFillSunFill className='text-text-sun text-[42px]' />
                         }
