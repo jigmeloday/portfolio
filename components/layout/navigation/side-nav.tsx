@@ -1,7 +1,7 @@
 import { NAV_CONST, SOCIAL_ICONS } from '@/components/icons/icons';
 import { motion } from 'framer-motion';
 import Image from 'next/image';
-import img from '@/public/images/profile.png';
+import img from '@/public/images/profile2.svg';
 
 function SideNav() {
     return(
