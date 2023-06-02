@@ -24,7 +24,8 @@ module.exports = {
           light: '#FCF6F5FF',
           dark: 'rgba(26,142,156,0.48)',
           contrastText: 'rgba(38,38,38,0.82)',
-          header: 'rgba(59,59,59,0.65)'
+          header: 'rgba(59,59,59,0.65)',
+          drawer: 'rgb(239,239,239)'
         },
         custom: {
           card1: '#dc7460',

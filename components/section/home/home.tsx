@@ -13,9 +13,9 @@ function Landing(){
     const getTime = Weather();
     const typeWriter = useTypedSuperpower(['User Experience Designer', 'User Interface Developer', 'Frontend Developer', 'Backend Developer']) ;
     return(
-        <div className='flex min-h-screen justify-end px-[42px]'>
-            <div className='flex w-[76%]'>
-               <div className='flex flex-col justify-center px-[22px] w-[40%]'>
+        <div className='flex min-h-screen justify-center md:justify-end px-[42px]'>
+            <div className='flex md:w-[76%]'>
+               <div className='flex flex-col justify-center px-[22px] md:w-[40%]'>
                    <motion.span
                        initial={{ opacity: 0 }}
                        whileInView={{ opacity: 1 }}
