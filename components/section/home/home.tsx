@@ -7,9 +7,11 @@ import { Weather } from '@/components/section/home/helper';
 import { BsFillMoonFill, BsFillSunFill } from 'react-icons/bs';
 import { AiFillStar } from 'react-icons/ai';
 import { STARS } from '@/components/section/home/constant/stars.constant';
+import { useTypedSuperpower } from '@/shared/custom-hook/typewriter';
 
 function Landing(){
     const getTime = Weather();
+    const typeWriter = useTypedSuperpower(['User Experience Designer', 'User Interface Developer', 'Frontend Developer', 'Backend Developer']) ;
     return(
         <div className='flex min-h-screen justify-end px-[42px]'>
             <div className='flex w-[76%]'>
@@ -43,11 +45,11 @@ function Landing(){
                        whileInView={{ opacity: 1 }}
                        transition={{ delay: 0.9, duration: 0.9 }}
                        viewport={ { once: true, amount: 0.9 } }
-                       className='flex pt-[6px] pb-[18px] items-center'>
+                       className='flex pt-[22px] items-center'>
                        <span className='text-center text-[24px]'>
                            <MdKeyboardArrowRight />
                        </span>
-                       <span className='text-primary-main'> Software Developer </span>
+                       <span className='text-primary-main'> {typeWriter} </span>
                        <span className='animate-pulse'>_</span>
                    </motion.div>
                    <motion.div
@@ -55,6 +57,7 @@ function Landing(){
                        whileInView={{ y: 0, opacity: 1 }}
                        transition={{ delay: 0.9, type:'spring', bounce: 0.8 }}
                        viewport={ { once: false, amount: 0.3, } }
+                       className='py-[20px]'
                    >
                        <Button label='Hire Me' type='button' variant='contained' click={() => alert('hello')} />
                    </motion.div>
