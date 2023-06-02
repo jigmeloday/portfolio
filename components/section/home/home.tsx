@@ -19,7 +19,7 @@ function Landing(){
                         whileInView={{ opacity: 1 }}
                         transition={{ delay: 0.3, duration: 0.9 }}
                         viewport={ { once: true, amount: 0.9 } }
-                        className='pt-[6px] pb-[4px] font-5 text-[12px] lg:text-[18px]'>
+                        className='pt-[6px] pb-[4px] font-5 text-[18px]'>
                         HI, THERE! 👋 I AM
                     </motion.span>
                     <motion.span
@@ -27,7 +27,7 @@ function Landing(){
                         whileInView={{ opacity: 1 }}
                         transition={{ delay: 0.5, duration: 0.9 }}
                         viewport={ { once: true, amount: 0.9 } }
-                        className='pb-[4px] font-6 text-[18px] lg:text-[32px] text-primary-main'>
+                        className='pb-[4px] font-6 text-[28px] lg:text-[32px] text-primary-main'>
                         Jigme Lodey
                     </motion.span>
                     <motion.span
@@ -35,7 +35,7 @@ function Landing(){
                         whileInView={{ opacity: 1 }}
                         transition={{ delay: 0.7, duration: 0.9 }}
                         viewport={ { once: true, amount: 0.9 } }
-                        className='py-[8px] lg:font-3 font-4 text-[10px] lg:text-[14px]'>
+                        className='py-[8px] lg:font-3 font-4 text-[14px]'>
                         I’m a software engineer specializing in building (and occasionally designing) exceptional digital experiences.
                     </motion.span>
                     <motion.div
@@ -44,11 +44,11 @@ function Landing(){
                         transition={{ delay: 0.9, duration: 0.9 }}
                         viewport={ { once: true, amount: 0.9 } }
                         className='flex pt-[16px] items-center h-[34px]'>
-                       <span className='text-center text-[14px] lg:text-[24px]'>
+                       <span className='text-center text-[18px] lg:text-[24px]'>
                            <MdKeyboardArrowRight />
                        </span>
-                        <span className='text-primary-main text-[12px] lg:text-[16px]'> {typeWriter} </span>
-                        <span className='animate-pulse text-[8px] lg:text-[16px]'>_</span>
+                        <span className='text-primary-main text-[14px] lg:text-[16px]'> {typeWriter} </span>
+                        <span className='animate-pulse text-[14px] lg:text-[16px]'>_</span>
                     </motion.div>
                     <motion.div
                         initial={{ y: 100, opacity: 0 }}
