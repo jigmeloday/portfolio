@@ -15,8 +15,8 @@ export function Exp() {
                    >
                        <CustomHeader text='MY EXPERIENCE' />
                    </motion.div>
-                   <div className='pt-[32px]'>
-                       <h1 className='font-6 text-[24px] py-[12px]'>
+                   <div className='pt-[42px]'>
+                       <h1 className='font-6 text-[24px]'>
                            My Journey
                        </h1>
                        <motion.div
@@ -24,7 +24,7 @@ export function Exp() {
                            whileInView={ { opacity: 1 } }
                            viewport={ { once: true, amount: 0.9 } }
                            transition={ { delay: 0.5 } }
-                           className='py-8'>
+                           >
                            <StepperComponent />
                        </motion.div>
                    </div>
