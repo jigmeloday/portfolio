@@ -1,5 +1,5 @@
 export interface SkillModel {
-    title: string,
+    section: string,
     details: Details[];
 }
 

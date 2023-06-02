@@ -84,7 +84,7 @@ export const CONTACT_INFO: ContactInfo[] = [
 
 export const SKILLS_CONSTANT: SkillModel[] = [
     {
-        title: 'Skills',
+        section: 'Skills',
         details: [
             {
                 id: 's1',
@@ -199,7 +199,7 @@ export const SKILLS_CONSTANT: SkillModel[] = [
         ]
     },
     {
-        title: 'MY EXPERTISE',
+        section: 'MY EXPERTISE',
         details: [
             {
                 id: 's1',
@@ -211,28 +211,8 @@ export const SKILLS_CONSTANT: SkillModel[] = [
                 list: [
                     {
                         id: 'l1',
-                        name: 'HTML'
+                        name: 'I\'ve been a website developer since 2018, starting with pure CSS, JS, and HTML. Through internships, I learned different frameworks and libraries, and now I work as a professional web developer.'
                     },
-                    {
-                        id: 'l2',
-                        name: 'CSS'
-                    },
-                    {
-                        id: 'l2',
-                        name: 'SCSS'
-                    },
-                    {
-                        id: 'l2',
-                        name: 'Tailwind'
-                    },
-                    {
-                        id: 'l2',
-                        name: 'StyleComponent'
-                    },
-                    {
-                        id: 'l2',
-                        name: 'MUI'
-                    }
                 ]
             },
             {
@@ -245,32 +225,8 @@ export const SKILLS_CONSTANT: SkillModel[] = [
                 list: [
                     {
                         id: 'l1',
-                        name: 'Javascript'
+                        name: 'I started as a React Native mobile app developer in 2020, built over two apps freelancing, and then moved to Flutter. Now experienced with both, I am confident in mobile app development.'
                     },
-                    {
-                        id: 'l2',
-                        name: 'TypeScript'
-                    },
-                    {
-                        id: 'l2',
-                        name: 'React'
-                    },
-                    {
-                        id: 'l2',
-                        name: 'Angular'
-                    },
-                    {
-                        id: 'l2',
-                        name: 'React Native'
-                    },
-                    {
-                        id: 'l2',
-                        name: 'Next.js'
-                    },
-                    {
-                        id: 'l2',
-                        name: 'Node.js'
-                    }
                 ]
             },
             {
@@ -283,32 +239,9 @@ export const SKILLS_CONSTANT: SkillModel[] = [
                 list: [
                     {
                         id: 'l1',
-                        name: 'Mongo'
+                        name: 'Design is my second passion, and I took a crash course to learn the basics, including color selection. Though I am not a professional designer, I create designs for small-scale and personal projects using Figma, which I find easy to use.'
                     },
-                    {
-                        id: 'l2',
-                        name: 'Postgres'
-                    },
-                    {
-                        id: 'l2',
-                        name: 'Rails'
-                    },
-                    {
-                        id: 'l2',
-                        name: 'Go'
-                    },
-                    {
-                        id: 'l2',
-                        name: 'Spring'
-                    },
-                    {
-                        id: 'l2',
-                        name: 'Express'
-                    },
-                    {
-                        id: 'l2',
-                        name: 'Firebase'
-                    }
+
                 ]
             }
         ]

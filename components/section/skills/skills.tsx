@@ -21,10 +21,10 @@ function Skills() {
                </span>
                <div className='py-[24px]'>
                    {
-                       SKILLS_CONSTANT.map(({ title,details }) => (
-                           <div key={title} className='flex flex-col'>
+                       SKILLS_CONSTANT.map(({ section,details }) => (
+                           <div key={section} className='flex flex-col'>
                                <h1 className='font-6 text-[24px] py-[24px] '>
-                                   {title}
+                                   {section}
                                </h1>
                                <div className='flex gap-[24px] py-[24px]'>
                                    {
@@ -37,7 +37,7 @@ function Skills() {
                                                key={id}
                                                className={`${classes} w-[250px] h-[200px] shadow-lg overflow-hidden transition duration-150 group relative rounded-[4px]`}
                                            >
-                                               <div className='flex group-hover:blur transition-all duration-500 flex-col min-h-full  relative overflow-hidden justify-center items-center'>
+                                               <div className='flex group-hover:blur-lg transition-all duration-500 flex-col min-h-full  relative overflow-hidden justify-center items-center'>
                                                    <div className='text-primary-main py-[8px]'>
                                                         <span className={`${textColor} text-[38px]`}>
                                                             {icon}
@@ -52,9 +52,12 @@ function Skills() {
                                                        {
                                                            list.map(({ name, id }) => (
                                                                <div className='flex items-center gap-[6px]' key={id}>
-                                                    <span className={`${textColor} text-[22px]`}>
-                                                        <MdKeyboardArrowRight />
-                                                    </span>
+                                                                   {
+                                                                       section === 'Skills' &&
+                                                                       <span className={`${textColor} text-[22px]`}>
+                                                                           <MdKeyboardArrowRight />
+                                                                        </span>
+                                                                   }
                                                                    <span className='font-6 text-[12px]'>{name}</span>
                                                                </div>
                                                            ))
