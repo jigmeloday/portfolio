@@ -7,7 +7,7 @@ function Input(props: InputProps){
     return (
         <div className={` ${className} relative ${isFocus || value ? 'border-primary-dark': 'border-primary-main'} transition delay-150 duration-200 ease-in-out h-[48px] border-2 px-2 my-[8px] rounded-[4px]`}>
             <div className='flex items-center absolute h-full'>
-                <label className={`transition delay-150 duration-200 ease-in-out ${isFocus || value ? '-translate-y-[24px] bg-[#43455c]': 'top-0'}`}>
+                <label className={`transition delay-150 duration-200 ease-in-out ${isFocus || value ? '-translate-y-[24px] bg-[rgb(239,239,239)]': 'top-0'}`}>
                     {label}
                 </label>
             </div>

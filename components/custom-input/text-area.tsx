@@ -7,7 +7,7 @@ function TextArea(props: InputProps) {
     return(
         <div className={`relative ${isFocus || value ? 'border-primary-dark': 'border-primary-main'} transition delay-150 duration-200 ease-in-out border-2 px-2 rounded-[4px] my-[8px]`}>
             <div className='flex absolute pt-[12px]'>
-                <label className={`transition delay-150 duration-200 ease-in-out ${isFocus || value ? '-translate-y-[24px] bg-[#43455c]': 'top-0'}`}>
+                <label className={`transition delay-150 duration-200 ease-in-out ${isFocus || value ? '-translate-y-[24px] bg-[rgb(239,239,239)]': 'top-0'}`}>
                     {label}
                 </label>
             </div>
