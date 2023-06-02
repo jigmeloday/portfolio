@@ -28,6 +28,9 @@ module.exports = {
         text: {
           dark: 'rgba(0, 0, 0, 0.87)' ,
           contrastText: 'rgba(0, 0, 0, 0.6)',
+          light: '#FCF6F5FF',
+          moon: 'rgba(157,178,191,0.44)',
+          sun: '#FDB813',
           error: '#E74C3C'
         }
       },
@@ -43,7 +46,7 @@ module.exports = {
         primary: {
           main: '#1A8E9C',
           light: '#FCF6F5FF',
-          dark: 'rgba(26,142,156,0.48)',
+          dark: 'rgba(14,101,115,0.88)',
           contrastText: 'rgba(38,38,38,0.82)'
         },
         secondary: {
