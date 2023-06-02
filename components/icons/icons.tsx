@@ -1,12 +1,13 @@
 import { NavigationModel } from '@/components/layout/model/navigation.model';
 import { RxDashboard } from 'react-icons/rx';
 import { BiCodeCurly } from 'react-icons/bi';
-import { FaCoffee, FaDatabase, FaLaptopCode, FaMapMarkerAlt, FaProjectDiagram, FaCode } from 'react-icons/fa';
+import { FaCoffee, FaDatabase, FaLaptopCode, FaMobile , FaMapMarkerAlt, FaProjectDiagram, FaCode } from 'react-icons/fa';
 import { AiOutlineMail, AiOutlineLinkedin, AiOutlineInstagram, AiOutlineGithub, AiOutlineTwitter } from 'react-icons/ai';
 import { HomeModel } from '@/components/section/home/model/home.model';
 import { ContactInfo } from '@/components/section/contact/model/contact.model';
 import { FiMail, FiPhone } from 'react-icons/fi';
 import { SkillModel } from '@/components/section/skills/model/skill.model';
+import { MdDesignServices } from 'react-icons/md';
 
 export const NAV_CONST: NavigationModel[] = [
     {
@@ -203,7 +204,7 @@ export const SKILLS_CONSTANT: SkillModel[] = [
             {
                 id: 's1',
                 title: 'Web Development',
-                icon: <FaCode />,
+                icon: <FaLaptopCode />,
                 textColor: 'text-custom-card4',
                 classes: 'border-b border-expbox-card4-border',
                 hover: 'bg-hover-card4',
@@ -237,7 +238,7 @@ export const SKILLS_CONSTANT: SkillModel[] = [
             {
                 id: 's1',
                 title: 'Application Development',
-                icon: <BiCodeCurly />,
+                icon: <FaMobile />,
                 textColor: 'text-custom-card5',
                 classes: 'border-b border-expbox-card5-border',
                 hover: 'bg-hover-card5',
@@ -275,7 +276,7 @@ export const SKILLS_CONSTANT: SkillModel[] = [
             {
                 id: 's1',
                 title: 'Designing',
-                icon: <FaDatabase />,
+                icon: <MdDesignServices />,
                 textColor: 'text-custom-card6',
                 classes: 'border-b border-expbox-card6-border',
                 hover: 'bg-hover-card6',

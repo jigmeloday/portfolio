@@ -43,7 +43,7 @@ function Skills() {
                                                             {icon}
                                                         </span>
                                                    </div>
-                                                   <span className='font-3 text-[14px] py-[12px]'>
+                                                   <span className='font-5 text-[14px] py-[12px]'>
                                                      {title}
                                                     </span>
                                                </div>
@@ -52,10 +52,10 @@ function Skills() {
                                                        {
                                                            list.map(({ name, id }) => (
                                                                <div className='flex items-center gap-[6px]' key={id}>
-                                                    <span className='text-primary-main'>
+                                                    <span className={`${textColor} text-[22px]`}>
                                                         <MdKeyboardArrowRight />
                                                     </span>
-                                                                   <span className='font-3 text-[12px]'>{name}</span>
+                                                                   <span className='font-6 text-[12px]'>{name}</span>
                                                                </div>
                                                            ))
                                                        }
