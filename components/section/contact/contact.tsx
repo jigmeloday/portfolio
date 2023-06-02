@@ -25,7 +25,7 @@ function Contact() {
                 <div className='lg:w-[40%] w-full'>
                     <ContactInfo/>
                 </div>
-                <div className='w-full'>
+                <div className='w-full px-[12px]'>
                     <Formik
                         initialValues={ INITIAL_FORM }
                         validationSchema={ CONTACT_SCHEMA }
