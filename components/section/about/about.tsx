@@ -29,7 +29,6 @@ function About() {
                                     viewport={ { once: true, amount: 0.9 } }
                                     transition={ { type: 'spring', bounce: 0.1, delay: 0.5 } }
                                     className='px-[8px] lg:w-[90%] lg:font-4 font-3 text-[12px] lg:text-[14px]'>
-
                                         {description}
                                 </motion.div>
                             </div>
