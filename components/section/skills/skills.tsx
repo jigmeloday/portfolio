@@ -21,7 +21,7 @@ function Skills() {
                                    className='font-6 text-[24px] '>
                                    {section}
                                </motion.h1>
-                               <div className='flex lg:flex-row flex-col gap-[24px] pb-[46px] items-center '>
+                               <div className='flex lg:flex-row flex-col gap-[24px] pb-[46px] items-center justify-center '>
                                    {
                                        details.map(({ id, icon, list, title, classes, textColor, hover  }) => (
                                            <motion.div
