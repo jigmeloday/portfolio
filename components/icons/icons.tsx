@@ -84,7 +84,7 @@ export const CONTACT_INFO: ContactInfo[] = [
 
 export const SKILLS_CONSTANT: SkillModel[] = [
     {
-        section: 'Skills',
+        section: 'My Skills',
         details: [
             {
                 id: 's1',
@@ -199,7 +199,7 @@ export const SKILLS_CONSTANT: SkillModel[] = [
         ]
     },
     {
-        section: 'MY EXPERTISE',
+        section: 'My Expertise',
         details: [
             {
                 id: 's1',

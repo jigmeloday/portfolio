@@ -19,14 +19,14 @@ function Skills() {
                <span>
 
                </span>
-               <div className='py-[24px]'>
+               <div className='flex flex-col gap-[24px] py-[8px] '>
                    {
                        SKILLS_CONSTANT.map(({ section,details }) => (
-                           <div key={section} className='flex flex-col'>
+                           <div key={section} className='flex flex-col py-[24px]'>
                                <h1 className='font-6 text-[24px] py-[24px] '>
                                    {section}
                                </h1>
-                               <div className='flex gap-[24px] py-[24px]'>
+                               <div className='flex gap-[24px] py-[16px]'>
                                    {
                                        details.map(({ id, icon, list, title, classes, textColor, hover  }) => (
                                            <motion.div
@@ -53,7 +53,7 @@ function Skills() {
                                                            list.map(({ name, id }) => (
                                                                <div className='flex items-center gap-[6px]' key={id}>
                                                                    {
-                                                                       section === 'Skills' &&
+                                                                       section === 'My Skills' &&
                                                                        <span className={`${textColor} text-[22px]`}>
                                                                            <MdKeyboardArrowRight />
                                                                         </span>
