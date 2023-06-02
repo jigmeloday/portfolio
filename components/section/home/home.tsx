@@ -19,7 +19,7 @@ function Landing(){
                         whileInView={{ opacity: 1 }}
                         transition={{ delay: 0.3, duration: 0.9 }}
                         viewport={ { once: true, amount: 0.9 } }
-                        className='pt-[6px] pb-[4px] font-5 text-[8px] lg:text-[18px]'>
+                        className='pt-[6px] pb-[4px] font-5 text-[12px] lg:text-[18px]'>
                         HI, THERE! 👋 I AM
                     </motion.span>
                     <motion.span
@@ -27,7 +27,7 @@ function Landing(){
                         whileInView={{ opacity: 1 }}
                         transition={{ delay: 0.5, duration: 0.9 }}
                         viewport={ { once: true, amount: 0.9 } }
-                        className='pb-[4px] font-6 text-[14px] lg:text-[32px] text-primary-main'>
+                        className='pb-[4px] font-6 text-[18px] lg:text-[32px] text-primary-main'>
                         Jigme Lodey
                     </motion.span>
                     <motion.span
@@ -35,7 +35,7 @@ function Landing(){
                         whileInView={{ opacity: 1 }}
                         transition={{ delay: 0.7, duration: 0.9 }}
                         viewport={ { once: true, amount: 0.9 } }
-                        className='py-[8px] font-3 text-[10px] lg:text-[14px]'>
+                        className='py-[8px] lg:font-3 font-4 text-[10px] lg:text-[14px]'>
                         I’m a software engineer specializing in building (and occasionally designing) exceptional digital experiences.
                     </motion.span>
                     <motion.div
@@ -43,11 +43,11 @@ function Landing(){
                         whileInView={{ opacity: 1 }}
                         transition={{ delay: 0.9, duration: 0.9 }}
                         viewport={ { once: true, amount: 0.9 } }
-                        className='flex pt-[22px] items-center'>
-                       <span className='text-center text-[12px] lg:text-[24px]'>
+                        className='flex pt-[16px] items-center h-[34px]'>
+                       <span className='text-center text-[14px] lg:text-[24px]'>
                            <MdKeyboardArrowRight />
                        </span>
-                        <span className='text-primary-main text-[8px] lg:text-[16px]'> {typeWriter} </span>
+                        <span className='text-primary-main text-[12px] lg:text-[16px]'> {typeWriter} </span>
                         <span className='animate-pulse text-[8px] lg:text-[16px]'>_</span>
                     </motion.div>
                     <motion.div
@@ -57,7 +57,7 @@ function Landing(){
                         viewport={ { once: true, amount: 0.3, } }
                         className='py-[20px]'
                     >
-                        <Button className='w-[70px] lg:w-[100px] lg:text-[12px] text-[10px]' label='Hire Me' type='button' variant='contained' click={() => alert('hello')} />
+                        <Button className='w-[70px] lg:w-[100px] text-[12px]' label='Hire Me' type='button' variant='contained' click={() => alert('hello')} />
                     </motion.div>
                 </div>
                 <div className='flex lg:items-center justify-center w-full pr-[24px] relative'>
