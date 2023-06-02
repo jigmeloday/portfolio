@@ -53,7 +53,7 @@ function Landing(){
                    <motion.div
                        initial={{ y: 100, opacity: 0 }}
                        whileInView={{ y: 0, opacity: 1 }}
-                       transition={{ delay: 0.9, type:'spring', bounce: 0.5 }}
+                       transition={{ delay: 0.9, type:'spring', bounce: 0.8 }}
                        viewport={ { once: false, amount: 0.3, } }
                    >
                        <Button label='Hire Me' type='button' variant='contained' click={() => alert('hello')} />
