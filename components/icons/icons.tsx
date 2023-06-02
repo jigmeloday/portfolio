@@ -7,7 +7,6 @@ import { HomeModel } from '@/components/section/home/model/home.model';
 import { ContactInfo } from '@/components/section/contact/model/contact.model';
 import { FiMail, FiPhone } from 'react-icons/fi';
 import { SkillModel } from '@/components/section/skills/model/skill.model';
-import { TbTools } from 'react-icons/tb';
 
 export const NAV_CONST: NavigationModel[] = [
     {
@@ -84,127 +83,235 @@ export const CONTACT_INFO: ContactInfo[] = [
 
 export const SKILLS_CONSTANT: SkillModel[] = [
     {
-        id: 's1',
-        title: 'User Interface',
-        icon: <FaCode />,
-        list: [
+        title: 'Skills',
+        details: [
             {
-                id: 'l1',
-                name: 'HTML'
+                id: 's1',
+                title: 'User Interface',
+                icon: <FaCode />,
+                classes: 'border-b border-expbox-card1-border',
+                textColor: 'text-custom-card1',
+                hover: 'bg-hover-card1',
+                list: [
+                    {
+                        id: 'l1',
+                        name: 'HTML'
+                    },
+                    {
+                        id: 'l2',
+                        name: 'CSS'
+                    },
+                    {
+                        id: 'l2',
+                        name: 'SCSS'
+                    },
+                    {
+                        id: 'l2',
+                        name: 'Tailwind'
+                    },
+                    {
+                        id: 'l2',
+                        name: 'StyleComponent'
+                    },
+                    {
+                        id: 'l2',
+                        name: 'MUI'
+                    }
+                ]
             },
             {
-                id: 'l2',
-                name: 'CSS'
+                id: 's1',
+                title: 'Fontend',
+                icon: <BiCodeCurly />,
+                textColor: 'text-custom-card2',
+                classes: 'border-b border-expbox-card2-border',
+                hover: 'bg-hover-card2',
+                list: [
+                    {
+                        id: 'l1',
+                        name: 'Javascript'
+                    },
+                    {
+                        id: 'l2',
+                        name: 'TypeScript'
+                    },
+                    {
+                        id: 'l2',
+                        name: 'React'
+                    },
+                    {
+                        id: 'l2',
+                        name: 'Angular'
+                    },
+                    {
+                        id: 'l2',
+                        name: 'React Native'
+                    },
+                    {
+                        id: 'l2',
+                        name: 'Next.js'
+                    },
+                    {
+                        id: 'l2',
+                        name: 'Node.js'
+                    }
+                ]
             },
             {
-                id: 'l2',
-                name: 'SCSS'
-            },
-            {
-                id: 'l2',
-                name: 'Tailwind'
-            },
-            {
-                id: 'l2',
-                name: 'StyleComponent'
-            },
-            {
-                id: 'l2',
-                name: 'MUI'
+                id: 's1',
+                title: 'Backend',
+                icon: <FaDatabase />,
+                textColor: 'text-custom-card3',
+                classes: 'border-b border-expbox-card3-border',
+                hover: 'bg-hover-card3',
+                list: [
+                    {
+                        id: 'l1',
+                        name: 'Mongo'
+                    },
+                    {
+                        id: 'l2',
+                        name: 'Postgres'
+                    },
+                    {
+                        id: 'l2',
+                        name: 'Rails'
+                    },
+                    {
+                        id: 'l2',
+                        name: 'Go'
+                    },
+                    {
+                        id: 'l2',
+                        name: 'Spring'
+                    },
+                    {
+                        id: 'l2',
+                        name: 'Express'
+                    },
+                    {
+                        id: 'l2',
+                        name: 'Firebase'
+                    }
+                ]
             }
         ]
     },
     {
-        id: 's1',
-        title: 'Fontend',
-        icon: <BiCodeCurly />,
-        list: [
+        title: 'MY EXPERTISE',
+        details: [
             {
-                id: 'l1',
-                name: 'Javascript'
+                id: 's1',
+                title: 'Web Development',
+                icon: <FaCode />,
+                textColor: 'text-custom-card4',
+                classes: 'border-b border-expbox-card4-border',
+                hover: 'bg-hover-card4',
+                list: [
+                    {
+                        id: 'l1',
+                        name: 'HTML'
+                    },
+                    {
+                        id: 'l2',
+                        name: 'CSS'
+                    },
+                    {
+                        id: 'l2',
+                        name: 'SCSS'
+                    },
+                    {
+                        id: 'l2',
+                        name: 'Tailwind'
+                    },
+                    {
+                        id: 'l2',
+                        name: 'StyleComponent'
+                    },
+                    {
+                        id: 'l2',
+                        name: 'MUI'
+                    }
+                ]
             },
             {
-                id: 'l2',
-                name: 'TypeScript'
+                id: 's1',
+                title: 'Application Development',
+                icon: <BiCodeCurly />,
+                textColor: 'text-custom-card5',
+                classes: 'border-b border-expbox-card5-border',
+                hover: 'bg-hover-card5',
+                list: [
+                    {
+                        id: 'l1',
+                        name: 'Javascript'
+                    },
+                    {
+                        id: 'l2',
+                        name: 'TypeScript'
+                    },
+                    {
+                        id: 'l2',
+                        name: 'React'
+                    },
+                    {
+                        id: 'l2',
+                        name: 'Angular'
+                    },
+                    {
+                        id: 'l2',
+                        name: 'React Native'
+                    },
+                    {
+                        id: 'l2',
+                        name: 'Next.js'
+                    },
+                    {
+                        id: 'l2',
+                        name: 'Node.js'
+                    }
+                ]
             },
             {
-                id: 'l2',
-                name: 'React'
-            },
-            {
-                id: 'l2',
-                name: 'Angular'
-            },
-            {
-                id: 'l2',
-                name: 'React Native'
-            },
-            {
-                id: 'l2',
-                name: 'Next.js'
-            },
-            {
-                id: 'l2',
-                name: 'Node.js'
-            }
-        ]
-    },
-    {
-        id: 's1',
-        title: 'Backend',
-        icon: <FaDatabase />,
-        list: [
-            {
-                id: 'l1',
-                name: 'Mongo'
-            },
-            {
-                id: 'l2',
-                name: 'Postgres'
-            },
-            {
-                id: 'l2',
-                name: 'Rails'
-            },
-            {
-                id: 'l2',
-                name: 'Go'
-            },
-            {
-                id: 'l2',
-                name: 'Spring'
-            },
-            {
-                id: 'l2',
-                name: 'Express'
-            },
-            {
-                id: 'l2',
-                name: 'Firebase'
-            }
-        ]
-    },
-    {
-        id: 's1',
-        title: 'Other',
-        icon: <TbTools />,
-        list: [
-            {
-                id: 'l1',
-                name: 'Figma'
-            },
-            {
-                id: 'l2',
-                name: 'Docker'
-            },
-            {
-                id: 'l2',
-                name: 'Github'
-            },
-            {
-                id: 'l2',
-                name: 'Bitbucket'
+                id: 's1',
+                title: 'Designing',
+                icon: <FaDatabase />,
+                textColor: 'text-custom-card6',
+                classes: 'border-b border-expbox-card6-border',
+                hover: 'bg-hover-card6',
+                list: [
+                    {
+                        id: 'l1',
+                        name: 'Mongo'
+                    },
+                    {
+                        id: 'l2',
+                        name: 'Postgres'
+                    },
+                    {
+                        id: 'l2',
+                        name: 'Rails'
+                    },
+                    {
+                        id: 'l2',
+                        name: 'Go'
+                    },
+                    {
+                        id: 'l2',
+                        name: 'Spring'
+                    },
+                    {
+                        id: 'l2',
+                        name: 'Express'
+                    },
+                    {
+                        id: 'l2',
+                        name: 'Firebase'
+                    }
+                ]
             }
         ]
     }
+
+
 ];
