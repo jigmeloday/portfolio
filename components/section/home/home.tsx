@@ -56,7 +56,7 @@ function Landing(){
                        initial={{ y: 100, opacity: 0 }}
                        whileInView={{ y: 0, opacity: 1 }}
                        transition={{ delay: 0.9, type:'spring', bounce: 0.8 }}
-                       viewport={ { once: false, amount: 0.3, } }
+                       viewport={ { once: true, amount: 0.3, } }
                        className='py-[20px]'
                    >
                        <Button label='Hire Me' type='button' variant='contained' click={() => alert('hello')} />
