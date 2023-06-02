@@ -23,9 +23,14 @@ function Skills() {
                    {
                        SKILLS_CONSTANT.map(({ section,details }) => (
                            <div key={section} className='flex flex-col py-[24px]'>
-                               <h1 className='font-6 text-[24px] py-[24px] '>
+                               <motion.h1
+                                   initial={ { opacity: 0 } }
+                                   whileInView={ { opacity: 1 } }
+                                   viewport={ { once: true, amount: 0.9 } }
+                                   transition={ { delay: 0.5, duration: 0.9 } }
+                                   className='font-6 text-[24px] py-[24px] '>
                                    {section}
-                               </h1>
+                               </motion.h1>
                                <div className='flex gap-[24px] py-[16px]'>
                                    {
                                        details.map(({ id, icon, list, title, classes, textColor, hover  }) => (
