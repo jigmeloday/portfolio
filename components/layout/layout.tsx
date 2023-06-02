@@ -14,10 +14,9 @@ function Layout(props: { children: ReactNode }) {
                   <SideNav />
               </div>
               <div>
-                  <button className='lg:hidden text-white' onClick={() => dispatch(setNavState(!isOpen))}>press </button>
+                  <button className='lg:hidden text-white absolute' onClick={() => dispatch(setNavState(!isOpen))}>press </button>
                   {props.children}
               </div>
-
           </div>
 
 
