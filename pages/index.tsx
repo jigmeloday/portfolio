@@ -8,13 +8,13 @@ import About from '@/components/section/about/about';
 export default function Home() {
     return (
         <main>
-            <section>
+            <section className='w-screen'>
                 <Landing/>
+
+            </section>
+            <section>
                 <About />
             </section>
-            {/*<section>*/}
-
-            {/*</section>*/}
             {/*<section>*/}
             {/*    <Exp />*/}
             {/*</section>*/}

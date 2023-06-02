@@ -1,8 +1,16 @@
+import { motion } from 'framer-motion';
+
 function CustomHeader(props: { text: string }) {
     return(
-        <h5 className='font-4 text-[14px] text-primary-header text-start'>
-            { props.text }
-        </h5>
+            <motion.h5
+                initial={ { opacity: 0, x: -20} }
+                whileInView={ { opacity: 1, x: 0 } }
+                viewport={ { once: true, amount: 0.9 } }
+                transition={ { delay: 0.5 } }
+                className='font-4 text-[14px] text-primary-header text-start'
+            >
+                { props.text }
+            </motion.h5>
     );
 }
 
