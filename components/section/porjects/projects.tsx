@@ -29,7 +29,7 @@ function Projects() {
 
                         </motion.span>
                     </div>
-                    <div className='flex lg:flex-row flex-col flex-wrap py-8 gap-[24px] '>
+                    <div className='flex lg:flex-row flex-col flex-wrap py-8 gap-[24px]  md:items-center '>
                         {
                             PROJECTS.map( ( { id, name, link, image, description } ) => (
                                 <motion.div
