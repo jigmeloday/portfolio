@@ -8,17 +8,7 @@ function Skills() {
     return(
        <CustomContainer>
            <div className='px-[32px]'>
-               <motion.div
-                   initial={ { opacity: 0, x: -100 } }
-                   whileInView={ { opacity: 1, x: 0 } }
-                   viewport={ { once: true, amount: 0.9 } }
-                   transition={ { type: 'spring', bounce: 0.1, delay: 0.5 } }
-               >
-                   <CustomHeader text='MY SPECIALTY' />
-               </motion.div>
-               <span>
-
-               </span>
+               <CustomHeader text='MY SPECIALTY' />
                <div className='flex flex-col py-[34px] '>
                    {
                        SKILLS_CONSTANT.map(({ section,details }) => (

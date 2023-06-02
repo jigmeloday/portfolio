@@ -11,7 +11,7 @@ function Projects() {
                 <CustomHeader text='PROJECTS' />
                 <div className='py-[34px]'>
                     <motion.h1
-                        initial={ { opacity: 0, x: -100 } }
+                        initial={ { opacity: 0, x: -10 } }
                         whileInView={ { opacity: 1, x: 0 } }
                         viewport={ { once: true, amount: 0.9 } }
                         transition={ { type: 'spring', bounce: 0.1, delay: 0.5 } }
