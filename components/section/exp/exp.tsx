@@ -7,18 +7,16 @@ export function Exp() {
     return (
             <CustomContainer>
                <div className='px-[32px]'>
-                   <motion.div
-                       initial={ { opacity: 0, y: - 100 } }
-                       whileInView={ { opacity: 1, y: 0 } }
-                       viewport={ { once: true, amount: 0.9 } }
-                       transition={ { type: 'spring', bounce: 0.1, delay: 0.5 } }
-                   >
-                       <CustomHeader text='MY EXPERIENCE' />
-                   </motion.div>
+                   <CustomHeader text='MY EXPERIENCE' />
                    <div className='py-[34px]'>
-                       <h1 className='font-6 text-[24px]'>
+                       <motion.h1
+                           initial={ { opacity: 0, y: - 100 } }
+                           whileInView={ { opacity: 1, y: 0 } }
+                           viewport={ { once: true, amount: 0.9 } }
+                           transition={ { type: 'spring', bounce: 0.1, delay: 0.5 } }
+                           className='font-6 text-[24px]'>
                            My Journey
-                       </h1>
+                       </motion.h1>
                        <motion.div
                            initial={ { opacity: 0 } }
                            whileInView={ { opacity: 1 } }
