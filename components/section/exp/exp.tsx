@@ -15,7 +15,7 @@ export function Exp() {
                    >
                        <CustomHeader text='MY EXPERIENCE' />
                    </motion.div>
-                   <div className='pt-[42px]'>
+                   <div className='py-[34px]'>
                        <h1 className='font-6 text-[24px]'>
                            My Journey
                        </h1>

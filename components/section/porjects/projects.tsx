@@ -7,26 +7,28 @@ import CustomHeader from '@/components/custom-header/custom-header';
 function Projects() {
     return (
         <CustomContainer>
-            <div className='px-[24px] py-[18px]'>
+            <div className='px-[24px]'>
                 <CustomHeader text='PROJECTS' />
-                <motion.h1
-                    initial={ { opacity: 0, x: -100 } }
-                    whileInView={ { opacity: 1, x: 0 } }
-                    viewport={ { once: true, amount: 0.9 } }
-                    transition={ { type: 'spring', bounce: 0.1, delay: 0.5 } }
-                    className='font-6 text-[24px] py-[12px]'>
-                    My Works
-                </motion.h1>
-                <div className='py-8'>
-                    <motion.span
-                        initial={{ opacity: 0 }}
-                        whileInView={{ opacity: 1 }}
+                <div className='py-[34px]'>
+                    <motion.h1
+                        initial={ { opacity: 0, x: -100 } }
+                        whileInView={ { opacity: 1, x: 0 } }
                         viewport={ { once: true, amount: 0.9 } }
-                        transition={ { duration: 0.8, delay: 0.5 } }
-                        className='text-text-dark'>
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the  standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                        transition={ { type: 'spring', bounce: 0.1, delay: 0.5 } }
+                        className='font-6 text-[24px] '>
+                        My Works
+                    </motion.h1>
+                    <div className='py-[12px]'>
+                        <motion.span
+                            initial={{ opacity: 0 }}
+                            whileInView={{ opacity: 1 }}
+                            viewport={ { once: true, amount: 0.9 } }
+                            transition={ { duration: 0.8, delay: 0.5 } }
+                            className='text-text-dark'>
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the  standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
 
-                    </motion.span>
+                        </motion.span>
+                    </div>
                     <div className='flex lg:flex-row flex-col flex-wrap py-8 gap-[24px] '>
                         {
                             PROJECTS.map( ( { id, name, link, image, description } ) => (

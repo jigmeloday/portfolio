@@ -19,19 +19,19 @@ function Skills() {
                <span>
 
                </span>
-               <div className='flex flex-col gap-[24px] py-[8px] '>
+               <div className='flex flex-col py-[34px] '>
                    {
                        SKILLS_CONSTANT.map(({ section,details }) => (
-                           <div key={section} className='flex flex-col py-[24px]'>
+                           <div key={section} className='flex flex-col gap-[34px]'>
                                <motion.h1
                                    initial={ { opacity: 0 } }
                                    whileInView={ { opacity: 1 } }
                                    viewport={ { once: true, amount: 0.9 } }
                                    transition={ { delay: 0.5, duration: 0.9 } }
-                                   className='font-6 text-[24px] py-[24px] '>
+                                   className='font-6 text-[24px] '>
                                    {section}
                                </motion.h1>
-                               <div className='flex gap-[24px] py-[16px]'>
+                               <div className='flex gap-[24px] pb-[46px]'>
                                    {
                                        details.map(({ id, icon, list, title, classes, textColor, hover  }) => (
                                            <motion.div
@@ -40,7 +40,7 @@ function Skills() {
                                                viewport={{ once: true, amount: 0.8 }}
                                                transition={{ type: 'spring', bounce: 0.1, delay: 0.7 }}
                                                key={id}
-                                               className={`${classes} w-[250px] h-[200px] shadow-lg overflow-hidden transition duration-150 group relative rounded-[4px]`}
+                                               className={`${classes} mb-[24px] w-[250px] h-[200px] shadow-lg overflow-hidden transition duration-150 group relative rounded-[4px]`}
                                            >
                                                <div className='flex group-hover:blur-lg transition-all duration-500 flex-col min-h-full  relative overflow-hidden justify-center items-center'>
                                                    <div className='text-primary-main py-[8px]'>
