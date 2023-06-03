@@ -100,6 +100,11 @@ module.exports = {
           card6:'rgba(255,3,181,0.35)',
         }
       },
+      screens: {
+        'sm': '576px',
+        'md': '960px',
+        'lg': '1440px',
+      },
     },
   },
   plugins: [],

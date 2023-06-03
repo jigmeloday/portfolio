@@ -92,7 +92,26 @@ function Landing(){
         //     </div>
         // </div>
         <CustomContainer>
-            hello
+            <div className='flex'>
+                <div className='flex flex-col justify-center min-h-screen w-[60%] md:w-[40%]'>
+                   <h3 className='font-6 text-[16px] md:text-[24px]'>
+                       HI, THERE! 👋 I AM
+                   </h3>
+                    <div className='py-[12px] lg:py-[4px]'>
+                        <h2 className='font-7 text-[20px] md:text-[32px] text-primary-main'>
+                            Jigme Lodey
+                        </h2>
+                    </div>
+                    <div className='leading-normal py-[14px]'>
+                        <span className='text-[12px] md:text-[16px] leading-normal '>
+                            I’m a software engineer specializing in building (and occasionally designing) exceptional digital experiences.
+                        </span>
+                    </div>
+                </div>
+                <div>
+                    hi
+                </div>
+            </div>
         </CustomContainer>
     );
 }
