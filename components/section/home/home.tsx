@@ -1,16 +1,16 @@
 // import { motion } from 'framer-motion';
-// import Image from 'next/image';
+import Image from 'next/image';
 // import Button from '@/components/custom-botton/button';
-// import { MdKeyboardArrowRight } from 'react-icons/md';
-// import img  from '../../../public/images/landing-svg.svg';
+import { MdKeyboardArrowRight } from 'react-icons/md';
+import img  from '../../../public/images/landing-svg.svg';
 // import { Weather } from '@/components/section/home/helper';
 // import { BsFillMoonFill, BsFillSunFill } from 'react-icons/bs';
-// import { useTypedSuperpower } from '@/shared/custom-hook/typewriter';
+import { useTypedSuperpower } from '@/shared/custom-hook/typewriter';
 import CustomContainer from '@/components/custom-container/custom-container';
 
 function Landing(){
     // const getTime = Weather();
-    // const typeWriter = useTypedSuperpower(['User Experience Designer', 'User Interface Developer', 'Frontend Developer', 'Backend Developer']) ;
+    const typeWriter = useTypedSuperpower(['User Experience Designer', 'User Interface Developer', 'Frontend Developer', 'Backend Developer']) ;
     return(
         // <div className='flex min-h-screen w-screen justify-center md:justify-end lg:px-[42px] px-[12px]'>
         //     <div className='flex w-screen lg:w-[76%] '>
@@ -93,7 +93,7 @@ function Landing(){
         // </div>
         <CustomContainer>
             <div className='flex'>
-                <div className='flex flex-col justify-center min-h-screen w-[60%] md:w-[40%]'>
+                <div className='flex flex-col justify-center min-h-screen w-[100%] '>
                    <h3 className='font-6 text-[16px] md:text-[24px]'>
                        HI, THERE! 👋 I AM
                    </h3>
@@ -106,10 +106,21 @@ function Landing(){
                         <span className='text-[12px] md:text-[16px] leading-normal '>
                             I’m a software engineer specializing in building (and occasionally designing) exceptional digital experiences.
                         </span>
+                        <div className='flex mt-[12px] py-[4px] items-center'>
+                            <span className='text-[16px] md:text-[24px]'>
+                                <MdKeyboardArrowRight />
+                            </span>
+                            <span className='text-primary-main text-[10px] md:text-[18px]'> {typeWriter} <span className='animate-pulse text-[10px] md:text-[16px]'>_</span> </span>
+
+                        </div>
                     </div>
                 </div>
-                <div>
-                    hi
+                <div className='flex flex-col justify-center min-h-screen w-full'>
+                  <div className='flex  justify-center'>
+                      <div className='flex items-center justify-center  relative w-full h-[150px] md:w-[300px] md:h-[300px]'>
+                          <Image src={img} alt='profile' height={540}  className='rounded-full'  />
+                      </div>
+                  </div>
                 </div>
             </div>
         </CustomContainer>
