@@ -2,11 +2,11 @@ import { ReactNode } from 'react';
 
 function CustomContainer(props: { children: ReactNode }) {
     return(
-        <div className='h-[100%] w-screen flex lg:justify-end lg:px-[28px]'>
-            <div className='lg:w-[76%]  py-[32px]'>
-                {props.children}
-            </div>
-        </div>
+       <div className='flex min-h-screen bg-blue-200 lg:justify-end'>
+           <div className='lg:w-[74%] w-full'>
+               {props.children}
+           </div>
+       </div>
     );
 }
 
