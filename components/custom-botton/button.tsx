@@ -7,12 +7,12 @@ function Button(props: ButtonProps) {
             className={`
             ${variant==='outlined' ? 
                 'border-2 border-primary-main hover:border-primary-light' : variant === 'contained' ?
-                    'bg-secondary-main hover:bg-secondary-dark' : '' }
+                    'bg-primary-main hover:bg-primary-dark' : '' }
                      text-center
                      py-[8px]
                      px-[12px]
-                     text-text-main
-                     hover:text-text-light
+                     text-text-light
+                     hover:text-[white]
                      transition duration-200 ease-in-out
                      w-[120px]  
                      font-2        
