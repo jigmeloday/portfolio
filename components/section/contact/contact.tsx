@@ -141,7 +141,7 @@ function Contact() {
                                        handleBlur,
                                        touched,
                                    } ) => (
-                                   <div className='w-[80%]'>
+                                   <div className='lg:w-[80%]'>
                                        {
                                            FORM_FIELD.map( ( { id, name, label } ) => (
                                                <motion.div
