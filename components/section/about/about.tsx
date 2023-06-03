@@ -1,7 +1,7 @@
 // import { motion } from 'framer-motion';
 import CustomContainer from '@/components/custom-container/custom-container';
 import CustomHeader from '@/components/custom-header/custom-header';
-// import { DUMMY } from '@/components/section/about/about.constant';
+import { DUMMY } from '@/components/section/about/about.constant';
 import SectionContainer from '@/components/custom-container/section-container';
 
 function About() {
@@ -41,6 +41,20 @@ function About() {
         <CustomContainer>
             <SectionContainer>
                 <CustomHeader text='ABOUT ME' />
+                <div className='flex flex-col items-start w-full'>
+                    {
+                        DUMMY.map(({ title, description }) => (
+                            <div key={title} className='flex flex-col py-[24px]'>
+                                <h1 className='font-8 text-[16px] md:text-[34px] lg:text-[26px]'>
+                                    {title}
+                                </h1>
+                                <div className='pt-[14px] lg:w-[90%]'>
+                                    <span className='text-[10px] md:text-[18px]'>{description}</span>
+                                </div>
+                            </div>
+                        ))
+                    }
+                </div>
             </SectionContainer>
         </CustomContainer>
 
