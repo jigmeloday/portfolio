@@ -1,6 +1,6 @@
 // import { motion } from 'framer-motion';
 import CustomContainer from '@/components/custom-container/custom-container';
-// import CustomHeader from '@/components/custom-header/custom-header';
+import CustomHeader from '@/components/custom-header/custom-header';
 // import { DUMMY } from '@/components/section/about/about.constant';
 import SectionContainer from '@/components/custom-container/section-container';
 
@@ -40,7 +40,7 @@ function About() {
         // </CustomContainer>
         <CustomContainer>
             <SectionContainer>
-                hello
+                <CustomHeader text='ABOUT ME' />
             </SectionContainer>
         </CustomContainer>
 
