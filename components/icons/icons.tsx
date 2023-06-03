@@ -78,7 +78,7 @@ export const CONTACT_INFO: ContactInfo[] = [
         id: 'c3',
         icon: <FaMapMarkerAlt />,
         label: 'Location',
-        detail: 'Babesa, Thimphu, Bhutan'
+        detail: 'Babesa,Thimphu,Bhutan'
     }
 ];
 

@@ -23,7 +23,9 @@ module.exports = {
           main: '#1A8E9C',
           light: '#FCF6F5FF',
           dark: 'rgba(26,142,156,0.48)',
-          contrastText: 'rgba(38,38,38,0.82)'
+          contrastText: 'rgba(38,38,38,0.82)',
+          header: 'rgba(59,59,59,0.65)',
+          drawer: 'rgb(239,239,239)'
         },
         custom: {
           card1: '#dc7460',
@@ -97,6 +99,11 @@ module.exports = {
           card5: 'rgba(149,104,212,0.35)',
           card6:'rgba(255,3,181,0.35)',
         }
+      },
+      screens: {
+        'sm': '576px',
+        'md': '760px',
+        'lg': '1440px',
       },
     },
   },
