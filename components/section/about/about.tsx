@@ -44,11 +44,11 @@ function About() {
                 <div className='flex flex-col items-start w-full'>
                     {
                         DUMMY.map(({ title, description }) => (
-                            <div key={title} className='flex flex-col py-[24px]'>
+                            <div key={title} className='flex flex-col py-[24px] items-center lg:items-start text-justify	'>
                                 <h1 className='font-8 text-[16px] md:text-[34px] lg:text-[26px]'>
                                     {title}
                                 </h1>
-                                <div className='pt-[14px] lg:w-[90%]'>
+                                <div className='pt-[14px] lg:w-[90%] md:pl-[12px]'>
                                     <span className='text-[10px] md:text-[18px]'>{description}</span>
                                 </div>
                             </div>
