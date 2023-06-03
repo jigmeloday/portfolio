@@ -1,6 +1,6 @@
 import Landing from '@/components/section/home/home';
+import About from '@/components/section/about/about';
 // import Exp from '@/components/section/exp/exp';
-// import About from '@/components/section/about/about';
 // import Projects from '@/components/section/porjects/projects';
 // import Contact from '@/components/section/contact/contact';
 // import Skills from '@/components/section/skills/skills';
@@ -11,9 +11,9 @@ export default function Home() {
             <section className='w-screen'>
                 <Landing/>
             </section>
-            {/*<section>*/}
-            {/*    <About />*/}
-            {/*</section>*/}
+            <section>
+                <About />
+            </section>
             {/*<section>*/}
             {/*    <Exp />*/}
             {/*</section>*/}
