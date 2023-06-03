@@ -49,7 +49,7 @@ function About() {
                                     {title}
                                 </h1>
                                 <div className='pt-[14px] lg:w-[90%] md:pl-[12px]'>
-                                    <span className='text-[10px] md:text-[18px]'>{description}</span>
+                                    <span className='text-[10px] md:text-[18px] lg:text-[14px] lg:leading-9'>{description}</span>
                                 </div>
                             </div>
                         ))
