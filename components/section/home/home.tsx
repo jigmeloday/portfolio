@@ -1,6 +1,6 @@
 // import { motion } from 'framer-motion';
 import Image from 'next/image';
-// import Button from '@/components/custom-botton/button';
+import Button from '@/components/custom-botton/button';
 import { MdKeyboardArrowRight } from 'react-icons/md';
 import img  from '../../../public/images/landing-svg.svg';
 // import { Weather } from '@/components/section/home/helper';
@@ -102,7 +102,7 @@ function Landing(){
                             Jigme Lodey
                         </h2>
                     </div>
-                    <div className='leading-normal py-[14px]'>
+                    <div className='md:w-[400px] py-[14px]'>
                         <span className='text-[12px] md:text-[16px] leading-normal '>
                             I’m a software engineer specializing in building (and occasionally designing) exceptional digital experiences.
                         </span>
@@ -111,7 +111,9 @@ function Landing(){
                                 <MdKeyboardArrowRight />
                             </span>
                             <span className='text-primary-main text-[10px] md:text-[18px]'> {typeWriter} <span className='animate-pulse text-[10px] md:text-[16px]'>_</span> </span>
-
+                        </div>
+                        <div className='my-[20px]'>
+                            <Button className='h-[40px] w-[80px] font-4 text-[14px] md:h-[50px] md:w-[120px] md:text-[18px]' label='Hire Me' type='button' variant='contained' click={() => alert('hello')}  />
                         </div>
                     </div>
                 </div>
