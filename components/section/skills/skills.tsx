@@ -117,26 +117,17 @@ function Skills() {
                                                                         whileInView={{ opacity: 1, y: 0 }}
                                                                         transition={{ duration: 0.4, delay: 0.2 }}
                                                                         className='flex items-center gap-[6px]' key={id}>
-                                                                        {
-                                                                            section === 'My Skills' &&
-                                                                            <span className={`${textColor} text-[22px]`}>
+                                                                        <span className={`${textColor} text-[22px]`}>
                                                                            <MdKeyboardArrowRight />
                                                                         </span>
-                                                                        }
                                                                         <span className='font-6 text-[12px]'>{name}</span>
                                                                     </motion.div>
                                                                 ) : (
                                                                    <motion.div
                                                                        initial={{ opacity: 0 }}
                                                                        whileInView={{ opacity: 1}}
-                                                                       transition={{ duration: 0.4, delay: 0.2 }}
+                                                                       transition={{ duration: 1.4, delay: 0.2 }}
                                                                        className='flex items-center gap-[6px]' key={id}>
-                                                                       {
-                                                                           section === 'My Skills' &&
-                                                                           <span className={`${textColor} text-[22px]`}>
-                                                                           <MdKeyboardArrowRight />
-                                                                        </span>
-                                                                       }
                                                                        <span className='font-6 text-[12px]'>{name}</span>
                                                                    </motion.div>
                                                                );
