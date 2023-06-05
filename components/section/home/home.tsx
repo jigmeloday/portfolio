@@ -35,8 +35,8 @@ function Landing(){
                             <div className='md:w-[400px] pt-[14px]'>
                                 <motion.div
                                     initial={{ opacity: 0, y: 80}}
-                                    whileInView={{ opacity: 1, y: 0}}
-                                    transition={{ delay: 0.6, duration: 1.5 }}
+                                    whileInView={{ opacity: 0.7, y: 0}}
+                                    transition={{ delay: 0.6, duration: 0.9 }}
                                     viewport={ { once: true, amount: 0.9 } }
                                 >
                                     <span
@@ -46,8 +46,8 @@ function Landing(){
                                 </motion.div>
                                 <motion.div
                                     initial={{ opacity: 0, x: -20}}
-                                    whileInView={{ opacity: 1, x:0}}
-                                    transition={{ delay: 1.2, duration: 1.5 }}
+                                    whileInView={{ opacity: 0.9, x:0}}
+                                    transition={{ delay: 0.9, duration: 1.5 }}
                                     viewport={ { once: true, amount: 0.9 } }
                                     className='flex mt-[12px] py-[4px] items-center'>
                                     <span className='text-[16px] md:text-[24px]'>
@@ -56,9 +56,9 @@ function Landing(){
                                     <span className='text-primary-main text-[10px] md:text-[18px]'> {typeWriter} <span className='animate-pulse text-[10px] md:text-[16px]'>_</span> </span>
                                 </motion.div>
                                 <motion.div
-                                    initial={{ opacity: 0, y: 30}}
+                                    initial={{ opacity: 0, y: 50}}
                                     whileInView={{ opacity: 1, y:0}}
-                                    transition={{ delay: 2.1, type: 'spring', bounce: 0.8}}
+                                    transition={{ delay: 0.9, type: 'spring', bounce: 0.8}}
                                     viewport={ { once: true, amount: 0.9 } }
                                     className='my-[20px]'>
                                     <Button className='h-[40px] w-[80px] font-4 text-[14px] md:h-[50px] md:w-[120px] md:text-[18px]' label='Hire Me' type='button' variant='contained' click={() => alert('hello')}  />
