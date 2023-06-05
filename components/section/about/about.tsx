@@ -14,7 +14,7 @@ function About() {
                         DUMMY.map(({ title, description }) => (
                             <div key={title} className='flex flex-col py-[24px] items-center lg:items-start text-justify'>
                                 <motion.div
-                                    initial={ { opacity: 0,  y: 110 } }
+                                    initial={ { opacity: 0,  y: 100 } }
                                     whileInView={ { opacity: 1, y: 0 } }
                                     viewport={ { once: true, amount: 0.9 } }
                                     transition={ { duration: 0.6, delay: 0.5 } }
@@ -24,7 +24,7 @@ function About() {
                                     </h1>
                                 </motion.div>
                                 <motion.div
-                                    initial={ { opacity: 0,  y: 110 } }
+                                    initial={ { opacity: 0,  y: 100 } }
                                     whileInView={ { opacity: 1, y: 0 } }
                                     viewport={ { once: true, amount: 0.9 } }
                                     transition={ { duration: 0.6, delay: 0.5 } }
