@@ -9,10 +9,10 @@ function Landing(){
     // const getTime = Weather();
     const typeWriter = useTypedSuperpower(['User Experience Designer', 'User Interface Developer', 'Frontend Developer', 'Backend Developer']) ;
     return(
-        <div className='flex min-h-screen justify-start lg:justify-end py-[42px]'>
+        <div className='flex min-h-screen justify-start lg:justify-end'>
             <div className='lg:w-[74%] w-full md:px-[16px] md:px-[40px] lg:px-[8px] '>
-                <div className='flex flex-col items-center lg:items-start md:py-[44px] py-[26px] px-[32px] lg:px-[0]'>
-                    <div className='flex'>
+                <div className='flex flex-col items-center lg:items-start md:py-[0] py-[26px] px-[32px] lg:px-[0]'>
+                    <div className='flex w-full'>
                         <div className='flex z-10 flex-col justify-center min-h-screen w-[100%] '>
                             <motion.h3
                                 initial={{ opacity: 0, x: -20 }}
@@ -32,7 +32,7 @@ function Landing(){
                                     Jigme Lodey
                                 </motion.h2>
                             </div>
-                            <div className='md:w-[400px] py-[14px]'>
+                            <div className='md:w-[400px] pt-[14px]'>
                                 <motion.div
                                     initial={{ opacity: 0, y: 80}}
                                     whileInView={{ opacity: 1, y: 0}}
@@ -65,19 +65,19 @@ function Landing(){
                                 </motion.div>
                             </div>
                         </div>
-                        <div className='flex flex-col justify-center min-h-screen w-full'>
+                        <div className='flex flex-col items-center justify-center min-h-screen w-full'>
                             <motion.div
                                 initial={{ opacity: 0}}
                                 whileInView={{ opacity: 1 }}
                                 transition={{ delay: 0.2, duration: 1.2}}
                                 viewport={ { once: true, amount: 0.2 } }
-                                className='flex  justify-center'>
+                                className='flex  '>
                                 <motion.div
                                     initial={{ x: -200 }}
                                     whileInView={{ x: 0 }}
                                     transition={{ delay: 0.2, duration: 2.5}}
                                     viewport={ { once: true, amount: 0.2 } }
-                                    className='flex z-0 items-center justify-center  relative w-full h-[150px] md:w-[300px] md:h-[300px]'>
+                                    className='flex z-0  relative w-full h-[150px] md:w-[300px] md:h-[300px]'>
                                     <Image src={img} alt='profile' height={540}  className='rounded-full'  />
                                 </motion.div>
                             </motion.div>
