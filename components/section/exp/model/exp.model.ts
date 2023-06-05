@@ -10,5 +10,6 @@ export interface ExpModel {
 
 export interface Stack{
     id: string;
-    name: string
+    name: string,
+    duration: number
 }

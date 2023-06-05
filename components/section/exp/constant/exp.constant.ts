@@ -10,11 +10,13 @@ export const EXP_DUMMY: ExpModel[] = [
         stack:[
             {
                 id: '11',
-                name: 'React'
+                name: 'React',
+                duration: 1.1
             },
             {
                 id: '12',
-                name: 'Angular'
+                name: 'Angular',
+                duration: 1.6
             }
         ]
     },
@@ -27,15 +29,18 @@ export const EXP_DUMMY: ExpModel[] = [
         stack:[
             {
                 id: '21',
-                name: 'React'
+                name: 'React',
+                duration: 1.1
             },
             {
                 id: '22',
-                name: 'Angular'
+                name: 'Angular',
+                duration: 1.6
             },
             {
                 id: '23',
-                name: 'React Native'
+                name: 'React Native',
+                duration: 2.1
             }
         ]
     },
@@ -48,15 +53,18 @@ export const EXP_DUMMY: ExpModel[] = [
         stack:[
             {
                 id: '31',
-                name: 'React'
+                name: 'React',
+                duration: 1.1
             },
             {
                 id: '32',
-                name: 'Angular'
+                name: 'Angular',
+                duration: 1.6
             },
             {
                 id: '33',
-                name: 'Node js'
+                name: 'Node js',
+                duration: 2.1
             }
         ]
     }

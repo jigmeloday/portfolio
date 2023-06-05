@@ -8,7 +8,7 @@ import Contact from '@/components/section/contact/contact';
 export default function Home() {
     return (
         <main>
-            <section className='w-screen'>
+            <section >
                 <Landing/>
             </section>
             <section>
