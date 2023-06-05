@@ -89,7 +89,7 @@ function Projects() {
                                     viewport={ { once: true, amount: 0.9 } }
                                     transition={ { duration: 0.6, delay: 0.5 } }
 
-                                className='w-fit h-fit shadow-2xl p-[12px] rounded-[8px] basis-[calc((100%/3)-24px)]'>
+                                className='w-fit h-fit shadow-md p-[12px] rounded-[8px] basis-[calc((100%/3)-24px)]'>
                                     <motion.div
                                         initial={{ opacity: 0, y: 110 }}
                                         whileInView={{ opacity: 1, y: 0 }}

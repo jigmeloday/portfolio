@@ -96,7 +96,7 @@ function Skills() {
                                                 whileInView={ { scale: 1 } }
                                                 viewport={ { once: true, amount: 0.9 } }
                                                 transition={ { duration: 1.4, delay: 0.5 } }
-                                                key={id} className={`${classes} mb-[24px] w-[250px] h-[200px] shadow-lg overflow-hidden transition duration-150 group relative rounded-[4px]`}>
+                                                key={id} className={`${classes} mb-[24px] w-[250px] h-[200px] shadow-md overflow-hidden transition duration-150 group relative rounded-[4px]`}>
                                                 <div className='flex group-hover:blur-lg transition-all duration-500 flex-col min-h-full  relative overflow-hidden justify-center items-center'>
                                                     <div className='text-primary-main py-[8px]'>
                                                         <span className={`${textColor} text-[38px]`}>
