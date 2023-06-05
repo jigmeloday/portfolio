@@ -53,55 +53,56 @@ function Contact() {
                                                    viewport={ { once: true, amount: 0.9 } }
                                                    transition={ { duration: 0.6, delay: 0.5 } }
                                                    className='py-[12px]' key={id}>
-                                                   <Input
-                                                       key={ id }
-                                                       label={ label }
-                                                       name={ name }
-                                                       onBlur={ handleBlur }
-                                                       value={ values?.[ name as keyof unknown ] }
-                                                       onChange={ handleChange }
-                                                       className='w-full'
-                                                   />
                                                    {
-                                                       touched[name as keyof unknown]
-                                                       && errors[name as keyof unknown] &&
-                                                       <motion.span
-                                                           initial={{ opacity: 0}}
-                                                           animate={{ opacity: 1}}
-                                                           transition={{ duration: 0.5 }}
-                                                           className='font-3 absolute text-[14px] text-text-error'
-                                                       >{errors[name as keyof unknown]}
-                                                       </motion.span>
+                                                       name !== 'message' ?
+                                                           <div>
+                                                               <Input
+                                                                   key={ id }
+                                                                   label={ label }
+                                                                   name={ name }
+                                                                   onBlur={ handleBlur }
+                                                                   value={ values?.[ name as keyof unknown ] }
+                                                                   onChange={ handleChange }
+                                                                   className='w-full'
+                                                               />
+                                                               {
+                                                                   touched[name as keyof unknown]
+                                                                   && errors[name as keyof unknown] &&
+                                                                   <motion.span
+                                                                       initial={{ opacity: 0}}
+                                                                       animate={{ opacity: 1}}
+                                                                       transition={{ duration: 0.5 }}
+                                                                       className='font-3 absolute text-[14px] text-text-error'
+                                                                   >{errors[name as keyof unknown]}
+                                                                   </motion.span>
+                                                               }
+                                                           </div>
+                                                           : <div
+                                                               className='py-[12px]'>
+                                                               <TextArea
+                                                                   onBlur={handleBlur}
+                                                                   cols={ 38 } rows={ 10 } onChange={ handleChange } value={ values.message }
+                                                                   label='Message' name='message'/>
+                                                               <div className='relative pb-[12px] h-fit'>
+                                                                   {
+                                                                       touched.message
+                                                                       && errors.message &&
+                                                                       <motion.span
+                                                                           initial={{ opacity: 0}}
+                                                                           animate={{ opacity: 1}}
+                                                                           exit={{ opacity: 0 }}
+                                                                           transition={{ duration: 0.5 }}
+                                                                           className='font-3 absolute text-[14px] text-text-error'
+                                                                       >{errors.message}
+                                                                       </motion.span>
+                                                                   }
+                                                               </div>
+                                                           </div>
                                                    }
                                                </motion.div>
 
                                            ) )
                                        }
-                                       <motion.div
-                                           initial={ { opacity: 0,  y: 10 } }
-                                           whileInView={ { opacity: 1, y: 0 } }
-                                           viewport={ { once: true, amount: 0.9 } }
-                                           transition={ { duration: 0.6, delay: 0.3 } }
-                                           className='py-[12px]'>
-                                           <TextArea
-                                               onBlur={handleBlur}
-                                               cols={ 38 } rows={ 10 } onChange={ handleChange } value={ values.message }
-                                               label='Message' name='message'/>
-                                           <div className='relative pb-[12px] h-fit'>
-                                               {
-                                                   touched.message
-                                                   && errors.message &&
-                                                   <motion.span
-                                                       initial={{ opacity: 0}}
-                                                       animate={{ opacity: 1}}
-                                                       exit={{ opacity: 0 }}
-                                                       transition={{ duration: 0.5 }}
-                                                       className='font-3 absolute text-[14px] text-text-error'
-                                                   >{errors.message}
-                                                   </motion.span>
-                                               }
-                                           </div>
-                                       </motion.div>
                                        <motion.div
                                            initial={{ opacity: 0 }}
                                            whileInView={ { opacity: 1} }
