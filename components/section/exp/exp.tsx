@@ -11,20 +11,20 @@ export function Exp() {
                 <CustomHeader text='MY EXPERIENCE' />
                 <div className='flex flex-col py-[24px] items-center lg:items-start text-justify'>
                     <motion.div
-                        initial={ { opacity: 0, y:100 } }
-                        whileInView={ { opacity: 1, y: 0 } }
+                        initial={ { opacity: 0, y: 100} }
+                        whileInView={ { opacity: 1, y:0 } }
                         viewport={ { once: true, amount: 0.9 } }
-                        transition={ { type: 'spring', bounce: 0.1, delay: 0.5 } }
+                        transition={ { duration: 0.6, delay: 0.2 } }
                     >
                         <h1 className='font-8 text-[16px] md:text-[34px] lg:text-[26px]'>
                             My Journey
                         </h1>
                     </motion.div>
                     <motion.div
-                        initial={ { scale: 0 } }
-                        whileInView={ { scale: 1} }
+                        initial={ { opacity: 0, y: 100} }
+                        whileInView={ { opacity: 1, y:0 } }
                         viewport={ { once: true, amount: 0.9 } }
-                        transition={ { type: 'spring', duration: 4.4, bounce: 0.6, delay: 0.5 } }
+                        transition={ { duration: 0.6, delay: 0.2 } }
                     >
                         <StepperComponent />
                     </motion.div>
