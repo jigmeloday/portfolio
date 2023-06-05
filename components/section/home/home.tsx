@@ -112,18 +112,21 @@ function Landing(){
                                 </motion.h2>
                             </div>
                             <div className='md:w-[400px] py-[14px]'>
-                            <motion.span
-                                initial={{ opacity: 0}}
-                                whileInView={{ opacity: 1}}
-                                transition={{ delay: 0.7, duration: 1.2 }}
-                                viewport={ { once: true, amount: 0.9 } }
-                                className='text-[12px] md:text-[16px] leading-normal '>
-                                    I’m a software engineer specializing in building (and occasionally designing) exceptional digital experiences.
-                            </motion.span>
                                 <motion.div
-                                    initial={{ opacity: 0}}
-                                    whileInView={{ opacity: 1}}
-                                    transition={{ delay: 0.7, duration: 1.5 }}
+                                    initial={{ opacity: 0, y: 80}}
+                                    whileInView={{ opacity: 1, y: 0}}
+                                    transition={{ delay: 2.7, duration: 1.2 }}
+                                    viewport={ { once: true, amount: 0.9 } }
+                                >
+                                    <span
+                                        className='text-[12px] md:text-[16px] leading-normal '>
+                                        I’m a software engineer specializing in building (and occasionally designing) exceptional digital experiences.
+                                    </span>
+                                </motion.div>
+                                <motion.div
+                                    initial={{ opacity: 0, x: -20}}
+                                    whileInView={{ opacity: 1, x:0}}
+                                    transition={{ delay: 3.1, duration: 1.5 }}
                                     viewport={ { once: true, amount: 0.9 } }
                                     className='flex mt-[12px] py-[4px] items-center'>
                                     <span className='text-[16px] md:text-[24px]'>
@@ -134,7 +137,7 @@ function Landing(){
                                 <motion.div
                                     initial={{ opacity: 0, y: 30}}
                                     whileInView={{ opacity: 1, y:0}}
-                                    transition={{ delay: 0.7, type: 'spring', bounce: 0.8}}
+                                    transition={{ delay: 3.7, type: 'spring', bounce: 0.8}}
                                     viewport={ { once: true, amount: 0.9 } }
                                     className='my-[20px]'>
                                     <Button className='h-[40px] w-[80px] font-4 text-[14px] md:h-[50px] md:w-[120px] md:text-[18px]' label='Hire Me' type='button' variant='contained' click={() => alert('hello')}  />
@@ -145,14 +148,14 @@ function Landing(){
                             <motion.div
                                 initial={{ opacity: 0}}
                                 whileInView={{ opacity: 1 }}
-                                transition={{ delay: 0.7, duration: 1.2}}
-                                viewport={ { once: true, amount: 0.9 } }
+                                transition={{ delay: 0.2, duration: 1.2}}
+                                viewport={ { once: true, amount: 0.2 } }
                                 className='flex  justify-center'>
                                 <motion.div
                                     initial={{ x: -200 }}
                                     whileInView={{ x: 0 }}
-                                    transition={{ delay: 0.7, duration: 7.2}}
-                                    viewport={ { once: true, amount: 0.9 } }
+                                    transition={{ delay: 0.2, duration: 7.2}}
+                                    viewport={ { once: true, amount: 0.2 } }
                                     className='flex z-0 items-center justify-center  relative w-full h-[150px] md:w-[300px] md:h-[300px]'>
                                     <Image src={img} alt='profile' height={540}  className='rounded-full'  />
                                 </motion.div>
