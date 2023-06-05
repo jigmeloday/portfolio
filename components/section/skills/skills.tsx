@@ -92,8 +92,8 @@ function Skills() {
                                     {
                                         details.map(({ id, title, classes, textColor, hover, list, icon }) => (
                                             <motion.div
-                                                initial={ { scale: 0} }
-                                                whileInView={ { scale: 1 } }
+                                                initial={ { opacity: 0, y: 100 } }
+                                                whileInView={ { opacity: 1, y:0 } }
                                                 viewport={ { once: true, amount: 0.9 } }
                                                 transition={ { duration: 1.4, delay: 0.5 } }
                                                 key={id} className={`${classes} mb-[24px] w-[250px] h-[200px] shadow-md overflow-hidden transition duration-150 group relative rounded-[4px]`}>

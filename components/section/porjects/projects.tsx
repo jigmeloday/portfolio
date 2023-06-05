@@ -12,7 +12,7 @@ function Projects() {
                 <CustomHeader text='PROJECTS' />
                 <div className='flex flex-col py-[24px] items-center lg:items-start text-justify'>
                     <motion.div
-                        initial={ { opacity: 0,  y: 110 } }
+                        initial={ { opacity: 0,  y: 100 } }
                         whileInView={ { opacity: 1, y: 0 } }
                         viewport={ { once: true, amount: 0.9 } }
                         transition={ { duration: 0.6, delay: 0.5 } }
@@ -26,14 +26,14 @@ function Projects() {
                             PROJECTS.map(({ id, name, link, image, description }) => (
                                 <motion.div
                                     key={id}
-                                    initial={{ scale: 0 }}
-                                    whileInView={{ scale: 1 }}
+                                    initial={ { opacity: 0,  y: 100 } }
+                                    whileInView={ { opacity: 1, y: 0 } }
                                     viewport={ { once: true, amount: 0.9 } }
                                     transition={ { duration: 0.6, delay: 0.5 } }
 
                                 className='w-fit h-fit shadow-md p-[12px] rounded-[8px] basis-[calc((100%/3)-24px)]'>
                                     <motion.div
-                                        initial={{ opacity: 0, y: 110 }}
+                                        initial={{ opacity: 0, y: 100 }}
                                         whileInView={{ opacity: 1, y: 0 }}
                                         viewport={ { once: true, amount: 0.9 } }
                                         transition={ { duration: 0.6, delay: 1.0 } }
