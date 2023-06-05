@@ -24,10 +24,10 @@ function About() {
                                     </h1>
                                 </motion.div>
                                 <motion.div
-                                    initial={ { scale: 0 } }
-                                    whileInView={ { scale: 1} }
+                                    initial={ { opacity: 0,  y: 110 } }
+                                    whileInView={ { opacity: 1, y: 0 } }
                                     viewport={ { once: true, amount: 0.9 } }
-                                    transition={ { duration: 1.2, delay: 0.5 } }
+                                    transition={ { duration: 0.6, delay: 0.5 } }
                                     className='pt-[14px] lg:w-[90%] md:pl-[12px]'>
                                     <span className='text-[10px] md:text-[18px] lg:text-[14px] lg:leading-9'>{description}</span>
                                 </motion.div>

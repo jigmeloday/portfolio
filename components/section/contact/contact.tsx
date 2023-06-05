@@ -122,9 +122,16 @@ function Contact() {
             <SectionContainer>
                 <CustomHeader text='GET IN TOUCH' />
                <div className='flex flex-col py-[24px] items-center lg:items-start text-justify w-full'>
-                   <h1 className='font-8 text-[16px] md:text-[34px] lg:text-[26px]'>
-                       Contact Me
-                   </h1>
+                   <motion.div
+                       initial={ { opacity: 0, y:100 } }
+                       whileInView={ { opacity: 1, y: 0 } }
+                       viewport={ { once: true, amount: 0.9 } }
+                       transition={ { type: 'spring', bounce: 0.1, delay: 0.5 } }
+                   >
+                       <h1 className='font-8 text-[16px] md:text-[34px] lg:text-[26px]'>
+                           Contact Me
+                       </h1>
+                   </motion.div>
                    <div className='flex md:flex-row flex-col pt-8 gap-[20%] w-full'>
                        <ContactInfo />
                        <div className='w-full py-[28px]'>
