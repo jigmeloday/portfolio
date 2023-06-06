@@ -3,11 +3,10 @@ import Image from 'next/image';
 import Button from '@/components/custom-botton/button';
 import { MdKeyboardArrowRight } from 'react-icons/md';
 import img  from '../../../public/images/landing-svg.svg';
-import { useTypedSuperpower } from '@/shared/custom-hook/typewriter';
+import Typewriter from '@/components/Typewriter';
 
 function Landing(){
     // const getTime = Weather();
-    const typeWriter = useTypedSuperpower(['User Experience Designer', 'User Interface Developer', 'Frontend Developer', 'Backend Developer']) ;
     return(
         <div className='flex min-h-screen justify-start lg:justify-end'>
             <div className='lg:w-[74%] w-full md:px-[16px] md:px-[40px] lg:px-[8px] '>
@@ -57,7 +56,7 @@ function Landing(){
                                     <span className='text-[16px] md:text-[24px]'>
                                         <MdKeyboardArrowRight />
                                     </span>
-                                    <span className='text-primary-main text-[10px] md:text-[18px]'> {typeWriter} <span className='animate-pulse text-[10px] md:text-[16px]'>_</span> </span>
+                                    <Typewriter />
                                 </motion.div>
                                 <motion.div
                                     initial={{ opacity: 0, y: 50}}
