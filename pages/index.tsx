@@ -8,22 +8,22 @@ import Contact from '@/components/section/contact/contact';
 export default function Home() {
     return (
         <main>
-            <section >
+            <section id='/'>
                 <Landing/>
             </section>
-            <section>
+            <section id='about'>
                 <About />
             </section>
-            <section>
+            <section id='exp'>
                 <Exp />
             </section>
             <section>
                 <Skills />
             </section>
-            <section>
+            <section id='work'>
                 <Projects />
             </section>
-            <section>
+            <section id='contact'>
                 <Contact />
             </section>
         </main>

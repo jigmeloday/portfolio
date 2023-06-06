@@ -51,16 +51,18 @@ function NavItems() {
                 transition={{ duration: 0.5 }}
                 className='overflow-hidden  px-2 py-6'>
                 {
-                    NAV_CONST.map(({ label, id}) => (
+                    NAV_CONST.map(({ label, id, link}) => (
                         <motion.div
                             key={id}
                             initial={{ y: -200, opacity: 0 }}
                             animate={{ y: 0, opacity: 1 }}
                             transition={{ delay: 0.5, duration: 1 }}
                             className='flex justify-center px-[4px] py-[5px] '>
-                            <div className='text-[12px] font-5 items-center cursor-pointer hover:text-primary-main hover:scale-125 transition delay-1500 duration-500 ease-in-out'>
-                                {label}
-                            </div>
+                            <a href={link}>
+                                <div className='text-[12px] font-5 items-center cursor-pointer hover:text-primary-main hover:scale-125 transition delay-1500 duration-500 ease-in-out'>
+                                    {label}
+                                </div>
+                            </a>
                         </motion.div>
                     ))
                 }
