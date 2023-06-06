@@ -4,12 +4,18 @@ import { selectCurrentNav, setNavState } from '@/services/state/shared/shared.sl
 import Drawer from '@/components/layout/navigation/drawer';
 import SideNav from '@/components/layout/navigation/side-nav';
 import { FaBars } from 'react-icons/fa';
+import { Cursor } from 'custom-pointer-react'
 
 function Layout(props: { children: ReactNode }) {
     const isOpen = useSelector(selectCurrentNav);
     const dispatch = useDispatch();
     return(
           <div className='flex'>
+              <Cursor
+                  color='#1A8E9C'
+                  ringSize={80}
+                  ringBorder={1}
+              />
               <Drawer />
               <div className='flex items-center min-h-screen fixed left-[6%] '>
                   <SideNav />
