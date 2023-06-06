@@ -19,21 +19,14 @@ function NavItems() {
                     <Image src={img} alt='profile' height={240}  className='rounded-full'  />
                 </motion.div>
                 <div className='pt-[18px]'>
-                    <div className='flex justify-center gap-[1.3px] cursor-pointer'>
-                        {
-                            ['J', 'I', 'G', 'M', 'E', '_', 'L', 'O', 'D', 'E', 'Y'].map((item) => (
-                                <motion.h1
-                                    key={item}
-                                    initial={{ opacity: 0 }}
-                                    animate={{ opacity: 1 }}
-                                    transition={{ duration: 0.9, delay: 0.6 }}
-                                    className='text-[24px] text-center font-8 hover:scale-150 transition delay-1500 duration-500 ease-in-out '>
-                                    {
-                                        item === '_'? <span className='px-[4px]'/> : item
-                                    }
-                                </motion.h1>
-                            ))
-                        }
+                    <div className='flex justify-center'>
+                        <motion.h1
+                            initial={{ opacity: 0 }}
+                            animate={{ opacity: 1 }}
+                            transition={{ duration: 0.9, delay: 0.6 }}
+                            className='text-[24px] text-center font-8  transition delay-1500 duration-500 ease-in-out '>
+                           JIGME LODEY
+                        </motion.h1>
                     </div>
                     <motion.span
                         initial={{ opacity: 0 }}
