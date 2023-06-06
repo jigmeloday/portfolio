@@ -14,30 +14,30 @@ export const NAV_CONST: NavigationModel[] = [
         id: '1',
         icon: <RxDashboard />,
         label: 'Home',
-        link: ''
+        link: '/#'
     },
     {
         id: '2',
         icon: <FaCoffee />,
-        link: '<faBeer />',
-        label: 'Know me'
+        link: '/#about',
+        label: 'Know Me'
     },
     {
         id: '3',
         icon: <FaLaptopCode />,
-        link: '',
-        label: 'Experince'
+        link: '/#exp',
+        label: 'Experience'
     },
     {
         id: '4',
         icon: <FaProjectDiagram />,
-        link: '',
+        link: '/#work',
         label: 'Projects'
     },
     {
         id: '5',
         icon: <AiOutlineMail />,
-        link: '',
+        link: '/#contact',
         label: 'Contact'
     }
 ];

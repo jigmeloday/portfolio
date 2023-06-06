@@ -3,11 +3,10 @@ import Image from 'next/image';
 import Button from '@/components/custom-botton/button';
 import { MdKeyboardArrowRight } from 'react-icons/md';
 import img  from '../../../public/images/landing-svg.svg';
-import { useTypedSuperpower } from '@/shared/custom-hook/typewriter';
+import Typewriter from '@/components/Typewriter';
 
 function Landing(){
     // const getTime = Weather();
-    const typeWriter = useTypedSuperpower(['User Experience Designer', 'User Interface Developer', 'Frontend Developer', 'Backend Developer']) ;
     return(
         <div className='flex min-h-screen justify-start lg:justify-end'>
             <div className='lg:w-[74%] w-full md:px-[16px] md:px-[40px] lg:px-[8px] '>
@@ -15,23 +14,27 @@ function Landing(){
                     <div className='flex w-full'>
                         <div className='flex z-10 flex-col justify-center min-h-screen w-[100%] '>
                             <motion.h3
-                                initial={{ opacity: 0, x: -20 }}
+                                initial={{ opacity: 0, y: -20 }}
                                 whileInView={{ opacity: 1, x: 0 }}
                                 transition={{ delay: 0.3, duration: 0.9 }}
                                 viewport={ { once: true, amount: 0.9 } }
                                 className='font-6 text-[16px] md:text-[24px]'>
                                 HI, THERE! 👋 I AM
                             </motion.h3>
-                            <div className='py-[12px] lg:py-[4px]'>
-                                <motion.h2
-                                    initial={{ opacity: 0, x: -20 }}
-                                    whileInView={{ opacity: 1, x: 0 }}
-                                    transition={{ delay: 0.5, duration: 0.9 }}
-                                    viewport={ { once: true, amount: 0.9 } }
-                                    className='font-7 text-[20px] md:text-[32px] text-primary-main'>
-                                    Jigme Lodey
-                                </motion.h2>
-                            </div>
+                            <motion.div
+                                initial={{ opacity: 0, y: -20 }}
+                                whileInView={{ opacity: 1, y: 0 }}
+                                transition={{ delay: 0.5, duration: 0.9 }}
+                                viewport={ { once: true, amount: 0.9 } }
+                                className='py-[12px] lg:py-[4px] flex cursor-fancy '>
+                                {
+                                    ['j', 'i', 'g', 'm', 'e', '_', 'l', 'o', 'd', 'e', 'y'].map((item) => (
+                                        <h1 key={item} className='font-7 text-[20px] md:text-[32px] text-primary-main hover:text-black hover:scale-150 transition delay-1500 duration-500 ease-in-out'>
+                                            { item === '_' ? <span className='px-[4px]'/> : item.toUpperCase()}
+                                        </h1>
+                                    ))
+                                }
+                            </motion.div>
                             <div className='md:w-[400px] pt-[14px]'>
                                 <motion.div
                                     initial={{ opacity: 0, y: 80}}
@@ -53,7 +56,7 @@ function Landing(){
                                     <span className='text-[16px] md:text-[24px]'>
                                         <MdKeyboardArrowRight />
                                     </span>
-                                    <span className='text-primary-main text-[10px] md:text-[18px]'> {typeWriter} <span className='animate-pulse text-[10px] md:text-[16px]'>_</span> </span>
+                                    <Typewriter />
                                 </motion.div>
                                 <motion.div
                                     initial={{ opacity: 0, y: 50}}

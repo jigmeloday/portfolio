@@ -7,15 +7,14 @@ function ContactInfo() {
             window.open( 'https://www.google.com/maps/place/Thimphu/@27.4794937,89.6384811,13z/data=!3m1!4b1!4m5!3m4!1s0x39e19419962037b7:0x7c01ffe2660560d1!8m2!3d27.4712216!4d89.6339041' );
     };
     return (
-        <motion.div
-            initial={{ opacity: 0, y: 100 }}
-            whileInView={ { opacity: 1, y: 0} }
-            viewport={ { once: true, amount: 0.9 } }
-            transition={ { delay: 0.5 } }
-            className='flex md:flex-col gap-[32px] my-[32px] md:justify-start justify-center'>
+        <div className='flex md:flex-col gap-[32px] py-[32px] md:justify-start justify-center'>
             {
                 CONTACT_INFO.map( ( { id, icon, label, detail } ) => (
-                    <div
+                    <motion.div
+                        initial={{ opacity: 0, y: 100 }}
+                        whileInView={ { opacity: 1, y: 0} }
+                        viewport={ { once: true, amount: 0.9 } }
+                        transition={ { delay: 0.5 } }
                         key={ id }
                         className='flex py-[12px] md:flex-row flex-col items-center gap-[14px]'>
                         <div
@@ -31,10 +30,10 @@ function ContactInfo() {
                                 <span className='font-2 text-[14px] text-text-main'>{ detail }</span>
                             </div>
                         </div>
-                    </div>
+                    </motion.div>
                 ) )
             }
-        </motion.div>
+        </div>
     );
 }
 

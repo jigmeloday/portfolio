@@ -16,10 +16,12 @@ function StepperComponent() {
                                 className='flex items-center p-2 md:p-6 leading-[1.3rem] no-underline after:bg-primary-main focus:outline-none transition duration-200 ease-in-out'>
                                 <span
                                     className='md:mr-3 mr-[8px] cursor-pointer flex h-[8px] w-[8px] md:h-[14px] md:w-[14px] items-center justify-center rounded-full bg-primary-main transition duration-200 ease-in-out '/>
-                                <span
-                                    className={ `cursor-pointer text-[12px] md:text-[18px] lg:font-2 font-4 ${ open === id ? 'text-primary-main' : 'text-text-main ' } transition duration-200 ease-in-out` }>
+                                <div className='transition duration-200 ease-in-out hover:text-primary-main'>
+                                    <span
+                                        className={ `cursor-pointer text-[12px] md:text-[18px] lg:font-2 font-4 ${ open === id ? 'text-primary-main' : 'text-text-main ' } transition duration-200 ease-in-out` }>
                                     { company }
                                 </span>
+                                </div>
                             </div>
                             {
                                 open === id &&

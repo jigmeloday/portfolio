@@ -8,6 +8,7 @@ import { FaBars } from 'react-icons/fa';
 function Layout(props: { children: ReactNode }) {
     const isOpen = useSelector(selectCurrentNav);
     const dispatch = useDispatch();
+
     return(
           <div className='flex'>
               <Drawer />

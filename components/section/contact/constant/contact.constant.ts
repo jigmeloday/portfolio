@@ -16,7 +16,11 @@ export const FORM_FIELD: InputField[] = [
         label: 'Phone',
         name: 'phone'
     },
-
+    {
+        id: '4',
+        label: 'Message',
+        name: 'message'
+    }
 ];
 
 export const INITIAL_FORM = {
