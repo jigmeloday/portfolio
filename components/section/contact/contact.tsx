@@ -77,8 +77,7 @@ function Contact() {
                                                                    </motion.span>
                                                                }
                                                            </div>
-                                                           : <div
-                                                               className='py-[12px]'>
+                                                           : <div className='py-[12px]'>
                                                                <TextArea
                                                                    onBlur={handleBlur}
                                                                    cols={ 38 } rows={ 10 } onChange={ handleChange } value={ values.message }
