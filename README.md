@@ -16,6 +16,5 @@ After executing these commands, your development server will be up and running, 
 Additionally, I've configured GitHub Actions and Husky for better code quality. GitHub Actions automates workflows, while Husky manages Git hooks to enforce coding standards. These configurations ensure a smoother development process and improved code reliability.
 
 For more details, please refer to the package.json file in the repository.
-
-If you have any questions, feel free to ask. Happy coding!    
+ 
     
