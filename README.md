@@ -1,3 +1,5 @@
+### PORTFOLIO
+
 Hello everyone! Welcome to my portfolio, which I have built using Next.js and Tailwind CSS. I've incorporated animation effects powered by Framer Motion to enhance the overall experience. If you're interested in using this portfolio, feel free to fork the repository and customize it according to your preferences.
 
 How to use?
