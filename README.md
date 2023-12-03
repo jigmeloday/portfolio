@@ -23,4 +23,4 @@ I have also set up GitHub Actions and Husky to improve code quality. GitHub Acti
 
 For more details, please refer to the package.json file in the repository.
 
-If you have any questions, feel free to ask. Happy coding!
+If you have any questions, feel free to ask. Happy coding! 😄 
