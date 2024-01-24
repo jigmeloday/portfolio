@@ -6,7 +6,7 @@ export const EXP_DUMMY: ExpModel[] = [
         title: 'Full Time',
         company: 'SELISE',
         description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-        joined: 'JAN 2021',
+        joined: 'JUL 2023',
         stack:[
             {
                 id: '11',

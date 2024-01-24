@@ -28,7 +28,7 @@ function Landing(){
                                 viewport={ { once: true, amount: 0.9 } }
                                 className='py-[12px] lg:py-[4px] flex cursor-fancy '>
                                 {
-                                    ['j', 'i', 'g', 'm', 'e', '_', 'l', 'o', 'd', 'e', 'y'].map((item) => (
+                                    ['t', 'e', 'n', 'z', 'i', 'n', '_', 'n', 'o', 'r', 'a', 'n', 'g'].map((item) => (
                                         <h1 key={item} className='font-7 text-[20px] md:text-[32px] text-primary-main hover:text-black hover:scale-150 transition delay-1500 duration-500 ease-in-out'>
                                             { item === '_' ? <span className='px-[4px]'/> : item.toUpperCase()}
                                         </h1>
@@ -44,7 +44,7 @@ function Landing(){
                                 >
                                     <span
                                         className='text-[12px] md:text-[16px] leading-normal '>
-                                        I’m a software engineer specializing in building (and occasionally designing) exceptional digital experiences.
+                                        I’m a software engineer specializing in aritificial Intelligence.
                                     </span>
                                 </motion.div>
                                 <motion.div
