@@ -1,13 +1,12 @@
 import { NavigationModel } from '@/components/layout/model/navigation.model';
 import { RxDashboard } from 'react-icons/rx';
 import { BiCodeCurly } from 'react-icons/bi';
-import { FaCoffee, FaDatabase, FaLaptopCode, FaMobile , FaMapMarkerAlt, FaProjectDiagram, FaCode } from 'react-icons/fa';
+import { FaCoffee, FaDatabase, FaLaptopCode, FaMobile , FaMapMarkerAlt, FaProjectDiagram, FaCode, FaNetworkWired } from 'react-icons/fa';
 import { AiOutlineMail, AiOutlineLinkedin, AiOutlineInstagram, AiOutlineGithub, AiOutlineTwitter } from 'react-icons/ai';
 import { HomeModel } from '@/components/section/home/model/home.model';
 import { ContactInfo } from '@/components/section/contact/model/contact.model';
 import { FiMail, FiPhone } from 'react-icons/fi';
 import { SkillModel } from '@/components/section/skills/model/skill.model';
-import { MdDesignServices } from 'react-icons/md';
 
 export const NAV_CONST: NavigationModel[] = [
     {
@@ -66,13 +65,13 @@ export const CONTACT_INFO: ContactInfo[] = [
         id: 'c1',
         icon: <FiMail />,
         label: 'Email',
-        detail: 'jigmenlodey@gmail.com'
+        detail: 'tenzin27norzang@gmail.com'
     },
     {
         id: 'c2',
         icon: <FiPhone />,
         label: 'Phone',
-        detail: '+975-77455740'
+        detail: '+975-77664575'
     },
     {
         id: 'c3',
@@ -88,7 +87,7 @@ export const SKILLS_CONSTANT: SkillModel[] = [
         details: [
             {
                 id: 's1',
-                title: 'User Interface',
+                title: 'Qulaity Assurance',
                 icon: <FaCode />,
                 classes: 'border-b border-expbox-card1-border',
                 textColor: 'text-custom-card1',
@@ -96,27 +95,11 @@ export const SKILLS_CONSTANT: SkillModel[] = [
                 list: [
                     {
                         id: 'l1',
-                        name: 'HTML'
+                        name: 'Cypress'
                     },
                     {
                         id: 'l2',
-                        name: 'CSS'
-                    },
-                    {
-                        id: 'l2',
-                        name: 'SCSS'
-                    },
-                    {
-                        id: 'l2',
-                        name: 'Tailwind'
-                    },
-                    {
-                        id: 'l2',
-                        name: 'StyleComponent'
-                    },
-                    {
-                        id: 'l2',
-                        name: 'MUI'
+                        name: 'Pen Testing'
                     }
                 ]
             },
@@ -211,7 +194,7 @@ export const SKILLS_CONSTANT: SkillModel[] = [
                 list: [
                     {
                         id: 'l1',
-                        name: 'I\'ve been a website developer since 2018, starting with pure CSS, JS, and HTML. Through internships, I learned different frameworks and libraries, and now I work as a professional web developer.'
+                        name: 'Since my graduation, I started working in a software development company in Bhutan. Since then I have been doing lots of projects on web development with various frameworks.'
                     },
                 ]
             },
@@ -225,21 +208,21 @@ export const SKILLS_CONSTANT: SkillModel[] = [
                 list: [
                     {
                         id: 'l1',
-                        name: 'I started as a React Native mobile app developer in 2020, built over two apps freelancing, and then moved to Flutter. Now experienced with both, I am confident in mobile app development.'
+                        name: 'I did a lot of mobile application development while doing my bacholers and also developed an AI incorporated mobile application using flutter.  I am confident in mobile app development.'
                     },
                 ]
             },
             {
                 id: 's1',
-                title: 'Designing',
-                icon: <MdDesignServices />,
+                title: 'QA Testing',
+                icon: <FaNetworkWired />,
                 textColor: 'text-custom-card6',
                 classes: 'border-b border-expbox-card6-border',
                 hover: 'bg-hover-card6',
                 list: [
                     {
                         id: 'l1',
-                        name: 'Design is my second passion, and I took a crash course to learn the basics, including color selection. Though I am not a professional designer, I create designs for small-scale and personal projects using Figma, which I find easy to use.'
+                        name: 'What\'s a software without quality right? I have also worked as quality assurance for three projects, writing end-to-end testing using the cypress framework and also specializing in pen testing.'
                     },
 
                 ]

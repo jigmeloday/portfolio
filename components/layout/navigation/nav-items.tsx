@@ -25,7 +25,7 @@ function NavItems() {
                             animate={{ opacity: 1 }}
                             transition={{ duration: 0.9, delay: 0.6 }}
                             className='text-[24px] text-center font-8  transition delay-1500 duration-500 ease-in-out '>
-                           JIGME LODEY
+                           TENZIN NORZANG
                         </motion.h1>
                     </div>
                     <motion.span
