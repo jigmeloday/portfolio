@@ -4,7 +4,6 @@ Hello everyone! Welcome to my portfolio, which I have built using Next.js and Ta
 
 How to use?
 To get started, follow these steps:
-
 Clone the repository:
 shell
 Copy code
